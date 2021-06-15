@@ -1,0 +1,1960 @@
+CUDA_VISIBLE_DEVICES=0 python main.py --train_range 5 --loss_fn retrain_regu_mine --finetune true --use_kfac False --log _Arms_s --data_dir ../data/cifar-10 --rl Reservoir
+Creating the datasets...
+train_size: 10000.0
+- done.
+Creating the model...
+From /home/xiaofengzhu/anaconda3/envs/venv/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /media/xiaofengzhu/DATA/GitHub/continual_learning/src_rl_group_cifar-10/model/modeling.py:469: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /media/xiaofengzhu/DATA/GitHub/continual_learning/src_rl_group_cifar-10/model/modeling.py:1207: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+From /home/xiaofengzhu/anaconda3/envs/venv/lib/python3.6/site-packages/tensorflow/python/ops/metrics_impl.py:363: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+- done.
+Starting training for at most 10 epoch(s) for the initial learner
+Restoring parameters from experiments/base_model/best_weights/after-epoch-50
+From /home/xiaofengzhu/anaconda3/envs/venv/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+Restoring parameters from experiments/base_model/best_weights/after-epoch-50
+[0.0, -inf]
+Epoch 51/60
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+- Train metrics: accuracy: 0.8128 ; loss: 1.0649
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-50
+Epoch 52/60
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+- Train metrics: accuracy: 0.8127 ; loss: 1.0651
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 53/60
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+- Train metrics: accuracy: 0.8127 ; loss: 1.0651
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 54/60
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+- Train metrics: accuracy: 0.8127 ; loss: 1.0651
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 55/60
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+- Train metrics: accuracy: 0.8127 ; loss: 1.0650
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 56/60
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+- Train metrics: accuracy: 0.8128 ; loss: 1.0649
+From /home/xiaofengzhu/anaconda3/envs/venv/lib/python3.6/site-packages/tensorflow/python/training/saver.py:966: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 57/60
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+- Train metrics: accuracy: 0.8127 ; loss: 1.0650
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 58/60
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+- Train metrics: accuracy: 0.8129 ; loss: 1.0648
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 59/60
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+- Train metrics: accuracy: 0.8129 ; loss: 1.0648
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 60/60
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+- Train metrics: accuracy: 0.8128 ; loss: 1.0650
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 61/100
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+- Train metrics: accuracy: 0.8127 ; loss: 1.0650
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 62/100
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+- Train metrics: accuracy: 0.8127 ; loss: 1.0651
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 63/100
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8127 ; loss: 1.0651
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 64/100
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8128 ; loss: 1.0650
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 65/100
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+- Train metrics: accuracy: 0.8127 ; loss: 1.0651
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 66/100
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+- Train metrics: accuracy: 0.8128 ; loss: 1.0649
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 67/100
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+- Train metrics: accuracy: 0.8128 ; loss: 1.0650
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 68/100
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+- Train metrics: accuracy: 0.8127 ; loss: 1.0650
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 69/100
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8127 ; loss: 1.0650
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 70/100
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+- Train metrics: accuracy: 0.8127 ; loss: 1.0651
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 71/100
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+- Train metrics: accuracy: 0.8127 ; loss: 1.0651
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 72/100
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8127 ; loss: 1.0650
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 73/100
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+- Train metrics: accuracy: 0.8127 ; loss: 1.0651
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 74/100
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+- Train metrics: accuracy: 0.8127 ; loss: 1.0652
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 75/100
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8127 ; loss: 1.0651
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 76/100
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+- Train metrics: accuracy: 0.8127 ; loss: 1.0651
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 77/100
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+- Train metrics: accuracy: 0.8127 ; loss: 1.0651
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 78/100
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8127 ; loss: 1.0651
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 79/100
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+- Train metrics: accuracy: 0.8127 ; loss: 1.0651
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 80/100
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+- Train metrics: accuracy: 0.8127 ; loss: 1.0651
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 81/100
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+- Train metrics: accuracy: 0.8144 ; loss: 1.0536
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 82/100
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+- Train metrics: accuracy: 0.8170 ; loss: 1.0416
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 83/100
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0384
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 84/100
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+- Train metrics: accuracy: 0.8176 ; loss: 1.0328
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 85/100
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0396
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 86/100
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+- Train metrics: accuracy: 0.8177 ; loss: 1.0385
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 87/100
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+- Train metrics: accuracy: 0.8176 ; loss: 1.0416
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 88/100
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+- Train metrics: accuracy: 0.8181 ; loss: 1.0313
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 89/100
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8179 ; loss: 1.0408
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 90/100
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+- Train metrics: accuracy: 0.8169 ; loss: 1.0385
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 91/100
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+- Train metrics: accuracy: 0.8180 ; loss: 1.0399
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 92/100
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+- Train metrics: accuracy: 0.8187 ; loss: 1.0280
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 93/100
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+- Train metrics: accuracy: 0.8180 ; loss: 1.0364
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 94/100
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+- Train metrics: accuracy: 0.8174 ; loss: 1.0410
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 95/100
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0397
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 96/100
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+- Train metrics: accuracy: 0.8170 ; loss: 1.0355
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 97/100
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+- Train metrics: accuracy: 0.8178 ; loss: 1.0340
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 98/100
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+- Train metrics: accuracy: 0.8173 ; loss: 1.0338
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 99/100
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+- Train metrics: accuracy: 0.8168 ; loss: 1.0457
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 100/100
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+- Train metrics: accuracy: 0.8172 ; loss: 1.0381
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+train num_steps: 157.0
+numbers_of_selections: [1, 0, 1, 3, 1, 3, 1, 1, 3, 0, 3, 0, 0, 0, 2, 0, 0, 0, 2, 0, 1, 0, 2, 2, 0, 0, 2, 3, 3, 0, 2, 1, 1, 0, 2, 0, 1, 1, 0, 1, 0, 2, 0, 0, 0, 3, 1, 2, 0, 0, 1, 1, 1, 0, 0, 0, 0, 2, 1, 3, 1, 2, 0, 0, 1, 0, 1, 0, 4, 0, 2, 0, 3, 0, 1, 2, 0, 0, 3, 2, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 2, 3, 0, 1, 0, 0, 1, 2, 0, 4, 0, 0, 0, 0, 0, 1, 2, 1, 1, 1, 1, 1, 2, 0, 1, 1, 4, 0, 1, 2, 2, 0, 0, 1, 1, 2, 1, 0, 1, 2, 2, 0, 0, 1, 0, 2, 0, 3, 0, 2, 2, 0, 1, 2, 0, 2, 0, 0, 2, 0, 2, 1, 3, 1]
+numbers_of_selections:
+ [1, 0, 1, 3, 1, 3, 1, 1, 3, 0, 3, 0, 0, 0, 2, 0, 0, 0, 2, 0, 1, 0, 2, 2, 0, 0, 2, 3, 3, 0, 2, 1, 1, 0, 2, 0, 1, 1, 0, 1, 0, 2, 0, 0, 0, 3, 1, 2, 0, 0, 1, 1, 1, 0, 0, 0, 0, 2, 1, 3, 1, 2, 0, 0, 1, 0, 1, 0, 4, 0, 2, 0, 3, 0, 1, 2, 0, 0, 3, 2, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 2, 3, 0, 1, 0, 0, 1, 2, 0, 4, 0, 0, 0, 0, 0, 1, 2, 1, 1, 1, 1, 1, 2, 0, 1, 1, 4, 0, 1, 2, 2, 0, 0, 1, 1, 2, 1, 0, 1, 2, 2, 0, 0, 1, 0, 2, 0, 3, 0, 2, 2, 0, 1, 2, 0, 2, 0, 0, 2, 0, 2, 1, 3, 1]
+len(top_sorted_index) in training: 80
+- take_train_samples_sess metrics: accuracy: 0.9969 ; loss: 0.0155
+global_epoch: 100 epoch(s) at learner 0
+total time: 6113.663015127182 seconds ---
+CUDA_VISIBLE_DEVICES=0 python main.py --train_range 6 --loss_fn retrain_regu_mine --finetune true --use_kfac False --log _Arms_s --data_dir ../data/cifar-10 --rl Reservoir
+Creating the datasets...
+train_size: 10000.0
+- done.
+Creating the model...
+From /home/xiaofengzhu/anaconda3/envs/venv/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /media/xiaofengzhu/DATA/GitHub/continual_learning/src_rl_group_cifar-10/model/modeling.py:469: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /media/xiaofengzhu/DATA/GitHub/continual_learning/src_rl_group_cifar-10/model/modeling.py:1207: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+From /home/xiaofengzhu/anaconda3/envs/venv/lib/python3.6/site-packages/tensorflow/python/ops/metrics_impl.py:363: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+- done.
+Starting training for at most 10 epoch(s) for the initial learner
+Restoring parameters from experiments/base_model/best_weights/after-epoch-51
+From /home/xiaofengzhu/anaconda3/envs/venv/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+Restoring parameters from experiments/base_model/best_weights/after-epoch-51
+[0.0, -inf]
+Epoch 52/61
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+- Train metrics: accuracy: 0.8144 ; loss: 1.1201
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-51
+Epoch 53/61
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+- Train metrics: accuracy: 0.8144 ; loss: 1.1201
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 54/61
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8144 ; loss: 1.1200
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 55/61
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+- Train metrics: accuracy: 0.8145 ; loss: 1.1200
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 56/61
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8144 ; loss: 1.1201
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 57/61
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+- Train metrics: accuracy: 0.8144 ; loss: 1.1202
+From /home/xiaofengzhu/anaconda3/envs/venv/lib/python3.6/site-packages/tensorflow/python/training/saver.py:966: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 58/61
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+- Train metrics: accuracy: 0.8144 ; loss: 1.1201
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 59/61
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8144 ; loss: 1.1200
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 60/61
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+- Train metrics: accuracy: 0.8145 ; loss: 1.1200
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 61/61
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8144 ; loss: 1.1201
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 62/101
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8145 ; loss: 1.1200
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 63/101
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+- Train metrics: accuracy: 0.8145 ; loss: 1.1200
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 64/101
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8145 ; loss: 1.1201
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 65/101
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+- Train metrics: accuracy: 0.8145 ; loss: 1.1200
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 66/101
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+- Train metrics: accuracy: 0.8144 ; loss: 1.1202
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 67/101
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8145 ; loss: 1.1200
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 68/101
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+- Train metrics: accuracy: 0.8144 ; loss: 1.1201
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 69/101
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+- Train metrics: accuracy: 0.8145 ; loss: 1.1200
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 70/101
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+- Train metrics: accuracy: 0.8144 ; loss: 1.1200
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 71/101
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8144 ; loss: 1.1202
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 72/101
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+- Train metrics: accuracy: 0.8144 ; loss: 1.1202
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 73/101
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+- Train metrics: accuracy: 0.8144 ; loss: 1.1201
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 74/101
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+- Train metrics: accuracy: 0.8144 ; loss: 1.1202
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 75/101
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8144 ; loss: 1.1201
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 76/101
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8144 ; loss: 1.1202
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 77/101
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+- Train metrics: accuracy: 0.8144 ; loss: 1.1202
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 78/101
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+- Train metrics: accuracy: 0.8144 ; loss: 1.1201
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 79/101
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8144 ; loss: 1.1202
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 80/101
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8144 ; loss: 1.1202
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 81/101
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+- Train metrics: accuracy: 0.8144 ; loss: 1.1202
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 82/101
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8176 ; loss: 1.1022
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 83/101
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8188 ; loss: 1.0983
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 84/101
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8199 ; loss: 1.0871
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 85/101
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+- Train metrics: accuracy: 0.8202 ; loss: 1.0869
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 86/101
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8187 ; loss: 1.0879
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 87/101
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+- Train metrics: accuracy: 0.8200 ; loss: 1.0809
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 88/101
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8186 ; loss: 1.1013
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 89/101
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8190 ; loss: 1.0908
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 90/101
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8200 ; loss: 1.0901
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 91/101
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8186 ; loss: 1.0977
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 92/101
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+- Train metrics: accuracy: 0.8195 ; loss: 1.0902
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 93/101
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+- Train metrics: accuracy: 0.8199 ; loss: 1.0885
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 94/101
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+- Train metrics: accuracy: 0.8187 ; loss: 1.0918
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 95/101
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8196 ; loss: 1.0931
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 96/101
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+- Train metrics: accuracy: 0.8198 ; loss: 1.0917
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 97/101
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8192 ; loss: 1.0902
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 98/101
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8196 ; loss: 1.0933
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 99/101
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+- Train metrics: accuracy: 0.8188 ; loss: 1.0928
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 100/101
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+- Train metrics: accuracy: 0.8191 ; loss: 1.0932
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 101/101
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8191 ; loss: 1.0949
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+train num_steps: 157.0
+numbers_of_selections: [4, 1, 2, 0, 0, 0, 0, 1, 2, 1, 1, 1, 2, 1, 0, 1, 0, 1, 1, 2, 0, 1, 1, 1, 0, 1, 1, 0, 2, 2, 1, 3, 0, 3, 1, 1, 1, 0, 0, 1, 1, 1, 1, 2, 0, 0, 1, 2, 1, 2, 0, 1, 2, 1, 1, 2, 1, 2, 0, 1, 1, 0, 0, 1, 0, 1, 1, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 2, 1, 1, 3, 1, 0, 0, 1, 2, 0, 2, 1, 0, 1, 2, 0, 0, 0, 1, 5, 2, 0, 2, 1, 1, 0, 3, 1, 0, 1, 0, 2, 0, 1, 1, 0, 3, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 3, 1, 0, 2, 2, 1, 0, 2, 1, 1]
+numbers_of_selections:
+ [4, 1, 2, 0, 0, 0, 0, 1, 2, 1, 1, 1, 2, 1, 0, 1, 0, 1, 1, 2, 0, 1, 1, 1, 0, 1, 1, 0, 2, 2, 1, 3, 0, 3, 1, 1, 1, 0, 0, 1, 1, 1, 1, 2, 0, 0, 1, 2, 1, 2, 0, 1, 2, 1, 1, 2, 1, 2, 0, 1, 1, 0, 0, 1, 0, 1, 1, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 2, 1, 1, 3, 1, 0, 0, 1, 2, 0, 2, 1, 0, 1, 2, 0, 0, 0, 1, 5, 2, 0, 2, 1, 1, 0, 3, 1, 0, 1, 0, 2, 0, 1, 1, 0, 3, 0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 3, 1, 0, 2, 2, 1, 0, 2, 1, 1]
+len(top_sorted_index) in training: 80
+- take_train_samples_sess metrics: accuracy: 0.9969 ; loss: 0.0155
+global_epoch: 101 epoch(s) at learner 0
+total time: 6109.903780221939 seconds ---
+CUDA_VISIBLE_DEVICES=0 python main.py --train_range 7 --loss_fn retrain_regu_mine --finetune true --use_kfac False --log _Arms_s --data_dir ../data/cifar-10 --rl Reservoir
+Creating the datasets...
+train_size: 10000.0
+- done.
+Creating the model...
+From /home/xiaofengzhu/anaconda3/envs/venv/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /media/xiaofengzhu/DATA/GitHub/continual_learning/src_rl_group_cifar-10/model/modeling.py:469: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /media/xiaofengzhu/DATA/GitHub/continual_learning/src_rl_group_cifar-10/model/modeling.py:1207: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+From /home/xiaofengzhu/anaconda3/envs/venv/lib/python3.6/site-packages/tensorflow/python/ops/metrics_impl.py:363: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+- done.
+Starting training for at most 10 epoch(s) for the initial learner
+Restoring parameters from experiments/base_model/best_weights/after-epoch-52
+From /home/xiaofengzhu/anaconda3/envs/venv/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+Restoring parameters from experiments/base_model/best_weights/after-epoch-52
+[0.0, -inf]
+Epoch 53/62
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0488
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-52
+Epoch 54/62
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0488
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 55/62
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0489
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 56/62
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0488
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 57/62
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8172 ; loss: 1.0486
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 58/62
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8172 ; loss: 1.0486
+From /home/xiaofengzhu/anaconda3/envs/venv/lib/python3.6/site-packages/tensorflow/python/training/saver.py:966: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 59/62
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8173 ; loss: 1.0487
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 60/62
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8172 ; loss: 1.0485
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 61/62
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+- Train metrics: accuracy: 0.8172 ; loss: 1.0487
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 62/62
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0488
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 63/102
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0488
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 64/102
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0489
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 65/102
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0488
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 66/102
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8172 ; loss: 1.0486
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 67/102
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0487
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 68/102
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0488
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 69/102
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0486
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 70/102
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0488
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 71/102
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0489
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 72/102
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0488
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 73/102
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0487
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 74/102
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0488
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 75/102
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0489
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 76/102
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0489
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 77/102
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0489
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 78/102
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0488
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 79/102
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0488
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 80/102
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0488
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 81/102
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0489
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 82/102
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0489
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 83/102
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8194 ; loss: 1.0389
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 84/102
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+- Train metrics: accuracy: 0.8217 ; loss: 1.0244
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 85/102
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+- Train metrics: accuracy: 0.8229 ; loss: 1.0102
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 86/102
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8223 ; loss: 1.0230
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 87/102
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+- Train metrics: accuracy: 0.8218 ; loss: 1.0196
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 88/102
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+- Train metrics: accuracy: 0.8214 ; loss: 1.0256
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 89/102
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+- Train metrics: accuracy: 0.8220 ; loss: 1.0217
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 90/102
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+- Train metrics: accuracy: 0.8211 ; loss: 1.0244
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 91/102
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8218 ; loss: 1.0260
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 92/102
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+- Train metrics: accuracy: 0.8202 ; loss: 1.0331
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 93/102
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+- Train metrics: accuracy: 0.8211 ; loss: 1.0243
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 94/102
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+- Train metrics: accuracy: 0.8209 ; loss: 1.0272
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 95/102
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+- Train metrics: accuracy: 0.8220 ; loss: 1.0199
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 96/102
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8215 ; loss: 1.0245
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 97/102
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8216 ; loss: 1.0217
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 98/102
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8230 ; loss: 1.0144
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 99/102
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+- Train metrics: accuracy: 0.8220 ; loss: 1.0225
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 100/102
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+- Train metrics: accuracy: 0.8216 ; loss: 1.0203
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 101/102
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+- Train metrics: accuracy: 0.8221 ; loss: 1.0173
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 102/102
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+- Train metrics: accuracy: 0.8220 ; loss: 1.0202
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+train num_steps: 157.0
+numbers_of_selections: [1, 1, 1, 1, 0, 1, 1, 1, 2, 2, 1, 1, 0, 1, 3, 0, 0, 1, 1, 0, 2, 0, 2, 0, 1, 1, 0, 2, 1, 3, 0, 0, 2, 0, 0, 2, 3, 1, 0, 0, 1, 1, 0, 1, 1, 4, 1, 0, 2, 0, 0, 1, 1, 3, 2, 2, 2, 1, 0, 1, 1, 3, 0, 0, 1, 3, 2, 0, 1, 1, 1, 2, 4, 0, 1, 1, 0, 3, 1, 0, 2, 2, 1, 0, 1, 0, 0, 0, 0, 0, 0, 2, 0, 0, 1, 1, 2, 2, 2, 2, 1, 2, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 2, 1, 1, 1, 1, 3, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 3, 1, 2, 1, 1, 1, 2, 1, 0, 2, 3, 2, 2, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 2]
+numbers_of_selections:
+ [1, 1, 1, 1, 0, 1, 1, 1, 2, 2, 1, 1, 0, 1, 3, 0, 0, 1, 1, 0, 2, 0, 2, 0, 1, 1, 0, 2, 1, 3, 0, 0, 2, 0, 0, 2, 3, 1, 0, 0, 1, 1, 0, 1, 1, 4, 1, 0, 2, 0, 0, 1, 1, 3, 2, 2, 2, 1, 0, 1, 1, 3, 0, 0, 1, 3, 2, 0, 1, 1, 1, 2, 4, 0, 1, 1, 0, 3, 1, 0, 2, 2, 1, 0, 1, 0, 0, 0, 0, 0, 0, 2, 0, 0, 1, 1, 2, 2, 2, 2, 1, 2, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 2, 1, 1, 1, 1, 3, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 3, 1, 2, 1, 1, 1, 2, 1, 0, 2, 3, 2, 2, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 2]
+len(top_sorted_index) in training: 80
+- take_train_samples_sess metrics: accuracy: 0.9969 ; loss: 0.0155
+global_epoch: 102 epoch(s) at learner 0
+total time: 6118.790618181229 seconds ---
+CUDA_VISIBLE_DEVICES=0 python main.py --train_range 8 --loss_fn retrain_regu_mine --finetune true --use_kfac False --log _Arms_s --data_dir ../data/cifar-10 --rl Reservoir
+Creating the datasets...
+train_size: 10000.0
+- done.
+Creating the model...
+From /home/xiaofengzhu/anaconda3/envs/venv/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /media/xiaofengzhu/DATA/GitHub/continual_learning/src_rl_group_cifar-10/model/modeling.py:469: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /media/xiaofengzhu/DATA/GitHub/continual_learning/src_rl_group_cifar-10/model/modeling.py:1207: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+From /home/xiaofengzhu/anaconda3/envs/venv/lib/python3.6/site-packages/tensorflow/python/ops/metrics_impl.py:363: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+- done.
+Starting training for at most 10 epoch(s) for the initial learner
+Restoring parameters from experiments/base_model/best_weights/after-epoch-53
+From /home/xiaofengzhu/anaconda3/envs/venv/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+Restoring parameters from experiments/base_model/best_weights/after-epoch-53
+[0.0, -inf]
+Epoch 54/63
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+- Train metrics: accuracy: 0.8123 ; loss: 1.1019
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-53
+Epoch 55/63
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+- Train metrics: accuracy: 0.8122 ; loss: 1.1020
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 56/63
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+- Train metrics: accuracy: 0.8122 ; loss: 1.1019
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 57/63
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8122 ; loss: 1.1020
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 58/63
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+- Train metrics: accuracy: 0.8122 ; loss: 1.1020
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 59/63
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8123 ; loss: 1.1019
+From /home/xiaofengzhu/anaconda3/envs/venv/lib/python3.6/site-packages/tensorflow/python/training/saver.py:966: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 60/63
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8124 ; loss: 1.1016
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 61/63
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8123 ; loss: 1.1019
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 62/63
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8123 ; loss: 1.1019
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 63/63
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+- Train metrics: accuracy: 0.8123 ; loss: 1.1020
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 64/103
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+- Train metrics: accuracy: 0.8122 ; loss: 1.1020
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 65/103
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+- Train metrics: accuracy: 0.8122 ; loss: 1.1020
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 66/103
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8122 ; loss: 1.1020
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 67/103
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8122 ; loss: 1.1020
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 68/103
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+- Train metrics: accuracy: 0.8123 ; loss: 1.1018
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 69/103
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+- Train metrics: accuracy: 0.8123 ; loss: 1.1019
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 70/103
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8122 ; loss: 1.1020
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 71/103
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+- Train metrics: accuracy: 0.8122 ; loss: 1.1020
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 72/103
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+- Train metrics: accuracy: 0.8122 ; loss: 1.1021
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 73/103
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8122 ; loss: 1.1019
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 74/103
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+- Train metrics: accuracy: 0.8122 ; loss: 1.1021
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 75/103
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8122 ; loss: 1.1021
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 76/103
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+- Train metrics: accuracy: 0.8122 ; loss: 1.1021
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 77/103
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+- Train metrics: accuracy: 0.8122 ; loss: 1.1021
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 78/103
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8122 ; loss: 1.1021
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 79/103
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+- Train metrics: accuracy: 0.8122 ; loss: 1.1020
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 80/103
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8122 ; loss: 1.1021
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 81/103
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8122 ; loss: 1.1021
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 82/103
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+- Train metrics: accuracy: 0.8122 ; loss: 1.1021
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 83/103
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+- Train metrics: accuracy: 0.8122 ; loss: 1.1021
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 84/103
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+- Train metrics: accuracy: 0.8151 ; loss: 1.0865
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 85/103
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+- Train metrics: accuracy: 0.8179 ; loss: 1.0668
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 86/103
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+- Train metrics: accuracy: 0.8170 ; loss: 1.0673
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 87/103
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+- Train metrics: accuracy: 0.8165 ; loss: 1.0764
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 88/103
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+- Train metrics: accuracy: 0.8177 ; loss: 1.0702
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 89/103
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0743
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 90/103
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8166 ; loss: 1.0795
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 91/103
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+- Train metrics: accuracy: 0.8170 ; loss: 1.0727
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 92/103
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+- Train metrics: accuracy: 0.8165 ; loss: 1.0765
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 93/103
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8169 ; loss: 1.0723
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 94/103
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+- Train metrics: accuracy: 0.8164 ; loss: 1.0792
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 95/103
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+- Train metrics: accuracy: 0.8166 ; loss: 1.0722
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 96/103
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8167 ; loss: 1.0770
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 97/103
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+- Train metrics: accuracy: 0.8165 ; loss: 1.0756
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 98/103
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+- Train metrics: accuracy: 0.8172 ; loss: 1.0762
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 99/103
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+- Train metrics: accuracy: 0.8169 ; loss: 1.0762
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 100/103
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+- Train metrics: accuracy: 0.8177 ; loss: 1.0658
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 101/103
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8164 ; loss: 1.0779
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 102/103
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8171 ; loss: 1.0734
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 103/103
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+- Train metrics: accuracy: 0.8185 ; loss: 1.0636
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+train num_steps: 157.0
+numbers_of_selections: [0, 4, 1, 3, 0, 0, 2, 1, 1, 1, 2, 2, 0, 1, 1, 3, 1, 0, 1, 4, 0, 2, 2, 1, 2, 3, 2, 2, 0, 0, 2, 1, 2, 0, 0, 2, 0, 2, 0, 0, 0, 1, 2, 0, 1, 0, 2, 1, 1, 0, 3, 1, 4, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 3, 1, 0, 0, 1, 2, 0, 2, 0, 1, 0, 2, 0, 1, 2, 0, 0, 3, 0, 1, 1, 0, 0, 0, 1, 1, 3, 1, 0, 0, 1, 0, 1, 0, 0, 1, 3, 1, 3, 2, 1, 1, 2, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 1, 3, 1, 2, 0, 1, 1, 2, 2, 1, 1, 1, 2, 1, 0, 2, 1, 0, 1, 1, 0, 0, 2, 1, 0, 0, 0, 1, 2, 0]
+numbers_of_selections:
+ [0, 4, 1, 3, 0, 0, 2, 1, 1, 1, 2, 2, 0, 1, 1, 3, 1, 0, 1, 4, 0, 2, 2, 1, 2, 3, 2, 2, 0, 0, 2, 1, 2, 0, 0, 2, 0, 2, 0, 0, 0, 1, 2, 0, 1, 0, 2, 1, 1, 0, 3, 1, 4, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 3, 1, 0, 0, 1, 2, 0, 2, 0, 1, 0, 2, 0, 1, 2, 0, 0, 3, 0, 1, 1, 0, 0, 0, 1, 1, 3, 1, 0, 0, 1, 0, 1, 0, 0, 1, 3, 1, 3, 2, 1, 1, 2, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 1, 3, 1, 2, 0, 1, 1, 2, 2, 1, 1, 1, 2, 1, 0, 2, 1, 0, 1, 1, 0, 0, 2, 1, 0, 0, 0, 1, 2, 0]
+len(top_sorted_index) in training: 80
+- take_train_samples_sess metrics: accuracy: 0.9969 ; loss: 0.0155
+global_epoch: 103 epoch(s) at learner 0
+total time: 6088.344080209732 seconds ---
+CUDA_VISIBLE_DEVICES=0 python main.py --train_range 9 --loss_fn retrain_regu_mine --finetune true --use_kfac False --log _Arms_s --data_dir ../data/cifar-10 --rl Reservoir
+Creating the datasets...
+train_size: 10000.0
+- done.
+Creating the model...
+From /home/xiaofengzhu/anaconda3/envs/venv/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /media/xiaofengzhu/DATA/GitHub/continual_learning/src_rl_group_cifar-10/model/modeling.py:469: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /media/xiaofengzhu/DATA/GitHub/continual_learning/src_rl_group_cifar-10/model/modeling.py:1207: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+From /home/xiaofengzhu/anaconda3/envs/venv/lib/python3.6/site-packages/tensorflow/python/ops/metrics_impl.py:363: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+- done.
+Starting training for at most 10 epoch(s) for the initial learner
+Restoring parameters from experiments/base_model/best_weights/after-epoch-54
+From /home/xiaofengzhu/anaconda3/envs/venv/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+Restoring parameters from experiments/base_model/best_weights/after-epoch-54
+[0.0, -inf]
+Epoch 55/64
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+- Train metrics: accuracy: 0.8221 ; loss: 1.0228
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-54
+Epoch 56/64
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+- Train metrics: accuracy: 0.8221 ; loss: 1.0229
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 57/64
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8221 ; loss: 1.0228
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 58/64
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+- Train metrics: accuracy: 0.8222 ; loss: 1.0227
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 59/64
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8221 ; loss: 1.0229
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 60/64
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8221 ; loss: 1.0228
+From /home/xiaofengzhu/anaconda3/envs/venv/lib/python3.6/site-packages/tensorflow/python/training/saver.py:966: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 61/64
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8223 ; loss: 1.0225
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 62/64
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8222 ; loss: 1.0227
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 63/64
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8223 ; loss: 1.0226
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 64/64
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8222 ; loss: 1.0227
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 65/104
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+- Train metrics: accuracy: 0.8221 ; loss: 1.0228
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 66/104
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+- Train metrics: accuracy: 0.8221 ; loss: 1.0229
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 67/104
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+- Train metrics: accuracy: 0.8221 ; loss: 1.0229
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 68/104
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+- Train metrics: accuracy: 0.8222 ; loss: 1.0227
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 69/104
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+- Train metrics: accuracy: 0.8222 ; loss: 1.0227
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 70/104
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8221 ; loss: 1.0228
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 71/104
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8221 ; loss: 1.0228
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 72/104
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+- Train metrics: accuracy: 0.8221 ; loss: 1.0229
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 73/104
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+- Train metrics: accuracy: 0.8221 ; loss: 1.0228
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 74/104
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8221 ; loss: 1.0228
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 75/104
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8221 ; loss: 1.0229
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 76/104
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+- Train metrics: accuracy: 0.8221 ; loss: 1.0229
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 77/104
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+- Train metrics: accuracy: 0.8221 ; loss: 1.0229
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 78/104
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+- Train metrics: accuracy: 0.8221 ; loss: 1.0229
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 79/104
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+- Train metrics: accuracy: 0.8221 ; loss: 1.0229
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 80/104
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+- Train metrics: accuracy: 0.8221 ; loss: 1.0229
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 81/104
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+- Train metrics: accuracy: 0.8221 ; loss: 1.0228
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 82/104
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8221 ; loss: 1.0229
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 83/104
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8221 ; loss: 1.0229
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 84/104
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8221 ; loss: 1.0229
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 85/104
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+- Train metrics: accuracy: 0.8251 ; loss: 1.0016
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 86/104
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+- Train metrics: accuracy: 0.8263 ; loss: 0.9998
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 87/104
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8270 ; loss: 0.9944
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 88/104
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+- Train metrics: accuracy: 0.8265 ; loss: 0.9974
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 89/104
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+- Train metrics: accuracy: 0.8267 ; loss: 1.0007
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 90/104
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+- Train metrics: accuracy: 0.8273 ; loss: 0.9862
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 91/104
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+- Train metrics: accuracy: 0.8256 ; loss: 1.0003
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 92/104
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+- Train metrics: accuracy: 0.8266 ; loss: 1.0008
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 93/104
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+- Train metrics: accuracy: 0.8259 ; loss: 1.0005
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 94/104
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+- Train metrics: accuracy: 0.8260 ; loss: 1.0023
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 95/104
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+- Train metrics: accuracy: 0.8265 ; loss: 0.9994
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 96/104
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8265 ; loss: 0.9941
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 97/104
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+- Train metrics: accuracy: 0.8260 ; loss: 1.0025
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 98/104
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+- Train metrics: accuracy: 0.8261 ; loss: 1.0022
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 99/104
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+- Train metrics: accuracy: 0.8265 ; loss: 0.9977
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 100/104
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+- Train metrics: accuracy: 0.8275 ; loss: 0.9873
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 101/104
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+- Train metrics: accuracy: 0.8270 ; loss: 0.9940
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 102/104
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+- Train metrics: accuracy: 0.8262 ; loss: 1.0020
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 103/104
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+- Train metrics: accuracy: 0.8263 ; loss: 0.9962
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+Epoch 104/104
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+- Train metrics: accuracy: 0.8265 ; loss: 1.0020
+- Eval metrics: accuracy: 0.8141 ; loss: 1.0803
+train num_steps: 157.0
+numbers_of_selections: [0, 0, 1, 0, 1, 0, 1, 1, 0, 2, 0, 0, 3, 1, 0, 0, 1, 3, 1, 0, 3, 2, 2, 2, 0, 1, 0, 1, 0, 2, 2, 0, 2, 0, 1, 2, 0, 0, 2, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 2, 2, 2, 0, 2, 2, 0, 1, 1, 2, 2, 1, 0, 0, 2, 0, 0, 1, 1, 2, 0, 0, 0, 0, 1, 1, 0, 2, 3, 0, 2, 3, 2, 3, 2, 1, 1, 1, 1, 1, 0, 2, 2, 1, 0, 0, 3, 5, 1, 1, 2, 2, 1, 2, 3, 1, 1, 1, 0, 2, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 2, 1, 0, 2, 3, 0, 2, 3, 0, 0, 0, 1, 1, 1, 0, 0, 2, 2, 1, 0, 0, 2, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 2]
+numbers_of_selections:
+ [0, 0, 1, 0, 1, 0, 1, 1, 0, 2, 0, 0, 3, 1, 0, 0, 1, 3, 1, 0, 3, 2, 2, 2, 0, 1, 0, 1, 0, 2, 2, 0, 2, 0, 1, 2, 0, 0, 2, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 2, 2, 2, 0, 2, 2, 0, 1, 1, 2, 2, 1, 0, 0, 2, 0, 0, 1, 1, 2, 0, 0, 0, 0, 1, 1, 0, 2, 3, 0, 2, 3, 2, 3, 2, 1, 1, 1, 1, 1, 0, 2, 2, 1, 0, 0, 3, 5, 1, 1, 2, 2, 1, 2, 3, 1, 1, 1, 0, 2, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 2, 1, 0, 2, 3, 0, 2, 3, 0, 0, 0, 1, 1, 1, 0, 0, 2, 2, 1, 0, 0, 2, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 2]
+len(top_sorted_index) in training: 80
+- take_train_samples_sess metrics: accuracy: 0.9969 ; loss: 0.0155
+global_epoch: 104 epoch(s) at learner 0
+total time: 6097.823855161667 seconds ---

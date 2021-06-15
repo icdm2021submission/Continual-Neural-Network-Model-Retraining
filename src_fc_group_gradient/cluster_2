@@ -1,0 +1,305 @@
+Epoch 1/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 418.31it/s]
+- Train metrics: accuracy: 0.7220 ; loss: 0.5840
+- Eval metrics: accuracy: 0.8473 ; loss: 0.4178
+- update_metrics metrics: accuracy: 0.8473 ; loss: 0.4178, average accuracy: 0.8473
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-0
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-0
+Epoch 2/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 536.99it/s]
+- Train metrics: accuracy: 0.8463 ; loss: 0.4032
+- Eval metrics: accuracy: 0.8486 ; loss: 0.4001
+- update_metrics metrics: accuracy: 0.8486 ; loss: 0.4001, average accuracy: 0.8486
+WARNING:tensorflow:From /Users/xiaofengzhu/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/training/saver.py:966: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+From /Users/xiaofengzhu/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/training/saver.py:966: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-1
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-1
+Epoch 3/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 513.65it/s]
+- Train metrics: accuracy: 0.8475 ; loss: 0.3985
+- Eval metrics: accuracy: 0.8490 ; loss: 0.3983
+- update_metrics metrics: accuracy: 0.8490 ; loss: 0.3983, average accuracy: 0.8490
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-2
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-2
+Epoch 4/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 511.62it/s]
+- Train metrics: accuracy: 0.8484 ; loss: 0.3970
+- Eval metrics: accuracy: 0.8491 ; loss: 0.3972
+- update_metrics metrics: accuracy: 0.8491 ; loss: 0.3972, average accuracy: 0.8491
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-3
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-3
+Epoch 5/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 514.92it/s]
+- Train metrics: accuracy: 0.8486 ; loss: 0.3960
+- Eval metrics: accuracy: 0.8489 ; loss: 0.3962
+- update_metrics metrics: accuracy: 0.8489 ; loss: 0.3962, average accuracy: 0.8489
+Epoch 6/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 479.03it/s]
+- Train metrics: accuracy: 0.8490 ; loss: 0.3952
+- Eval metrics: accuracy: 0.8491 ; loss: 0.3954
+- update_metrics metrics: accuracy: 0.8491 ; loss: 0.3954, average accuracy: 0.8491
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-5
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-5
+Epoch 7/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 490.91it/s]
+- Train metrics: accuracy: 0.8489 ; loss: 0.3944
+- Eval metrics: accuracy: 0.8490 ; loss: 0.3946
+- update_metrics metrics: accuracy: 0.8490 ; loss: 0.3946, average accuracy: 0.8490
+Epoch 8/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 482.40it/s]
+- Train metrics: accuracy: 0.8489 ; loss: 0.3937
+- Eval metrics: accuracy: 0.8492 ; loss: 0.3940
+- update_metrics metrics: accuracy: 0.8492 ; loss: 0.3940, average accuracy: 0.8492
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-7
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-7
+Epoch 9/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 503.74it/s]
+- Train metrics: accuracy: 0.8491 ; loss: 0.3931
+- Eval metrics: accuracy: 0.8493 ; loss: 0.3934
+- update_metrics metrics: accuracy: 0.8493 ; loss: 0.3934, average accuracy: 0.8493
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-8
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-8
+Epoch 10/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 493.90it/s]
+- Train metrics: accuracy: 0.8491 ; loss: 0.3925
+- Eval metrics: accuracy: 0.8494 ; loss: 0.3927
+- update_metrics metrics: accuracy: 0.8494 ; loss: 0.3927, average accuracy: 0.8494
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-9
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-9
+Epoch 11/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 494.71it/s]
+- Train metrics: accuracy: 0.8493 ; loss: 0.3920
+- Eval metrics: accuracy: 0.8494 ; loss: 0.3922
+- update_metrics metrics: accuracy: 0.8494 ; loss: 0.3922, average accuracy: 0.8494
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-10
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-10
+Epoch 12/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 488.89it/s]
+- Train metrics: accuracy: 0.8494 ; loss: 0.3915
+- Eval metrics: accuracy: 0.8494 ; loss: 0.3918
+- update_metrics metrics: accuracy: 0.8494 ; loss: 0.3918, average accuracy: 0.8494
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-11
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-11
+Epoch 13/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 492.15it/s]
+- Train metrics: accuracy: 0.8493 ; loss: 0.3911
+- Eval metrics: accuracy: 0.8494 ; loss: 0.3914
+- update_metrics metrics: accuracy: 0.8494 ; loss: 0.3914, average accuracy: 0.8494
+Epoch 14/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 466.09it/s]
+- Train metrics: accuracy: 0.8495 ; loss: 0.3907
+- Eval metrics: accuracy: 0.8494 ; loss: 0.3910
+- update_metrics metrics: accuracy: 0.8494 ; loss: 0.3910, average accuracy: 0.8494
+Epoch 15/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 468.55it/s]
+- Train metrics: accuracy: 0.8494 ; loss: 0.3904
+- Eval metrics: accuracy: 0.8495 ; loss: 0.3906
+- update_metrics metrics: accuracy: 0.8495 ; loss: 0.3906, average accuracy: 0.8495
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-14
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-14
+Epoch 16/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 498.86it/s]
+- Train metrics: accuracy: 0.8490 ; loss: 0.3900
+- Eval metrics: accuracy: 0.8495 ; loss: 0.3904
+- update_metrics metrics: accuracy: 0.8495 ; loss: 0.3904, average accuracy: 0.8495
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-15
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-15
+Epoch 17/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 418.43it/s]
+- Train metrics: accuracy: 0.8492 ; loss: 0.3897
+- Eval metrics: accuracy: 0.8496 ; loss: 0.3901
+- update_metrics metrics: accuracy: 0.8496 ; loss: 0.3901, average accuracy: 0.8496
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-16
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-16
+Epoch 18/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 491.77it/s]
+- Train metrics: accuracy: 0.8493 ; loss: 0.3895
+- Eval metrics: accuracy: 0.8497 ; loss: 0.3898
+- update_metrics metrics: accuracy: 0.8497 ; loss: 0.3898, average accuracy: 0.8497
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-17
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-17
+Epoch 19/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 484.10it/s]
+- Train metrics: accuracy: 0.8494 ; loss: 0.3892
+- Eval metrics: accuracy: 0.8498 ; loss: 0.3895
+- update_metrics metrics: accuracy: 0.8498 ; loss: 0.3895, average accuracy: 0.8498
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-18
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-18
+Epoch 20/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 472.98it/s]
+- Train metrics: accuracy: 0.8499 ; loss: 0.3890
+- Eval metrics: accuracy: 0.8498 ; loss: 0.3893
+- update_metrics metrics: accuracy: 0.8498 ; loss: 0.3893, average accuracy: 0.8498
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-19
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-19
+Epoch 21/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 478.98it/s]
+- Train metrics: accuracy: 0.8499 ; loss: 0.3888
+- Eval metrics: accuracy: 0.8499 ; loss: 0.3891
+- update_metrics metrics: accuracy: 0.8499 ; loss: 0.3891, average accuracy: 0.8499
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-20
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-20
+Epoch 22/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 489.43it/s]
+- Train metrics: accuracy: 0.8500 ; loss: 0.3886
+- Eval metrics: accuracy: 0.8499 ; loss: 0.3889
+- update_metrics metrics: accuracy: 0.8499 ; loss: 0.3889, average accuracy: 0.8499
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-21
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-21
+Epoch 23/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 477.53it/s]
+- Train metrics: accuracy: 0.8502 ; loss: 0.3884
+- Eval metrics: accuracy: 0.8499 ; loss: 0.3887
+- update_metrics metrics: accuracy: 0.8499 ; loss: 0.3887, average accuracy: 0.8499
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-22
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-22
+Epoch 24/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 474.38it/s]
+- Train metrics: accuracy: 0.8500 ; loss: 0.3882
+- Eval metrics: accuracy: 0.8500 ; loss: 0.3886
+- update_metrics metrics: accuracy: 0.8500 ; loss: 0.3886, average accuracy: 0.8500
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-23
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-23
+Epoch 25/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 462.71it/s]
+- Train metrics: accuracy: 0.8499 ; loss: 0.3881
+- Eval metrics: accuracy: 0.8499 ; loss: 0.3884
+- update_metrics metrics: accuracy: 0.8499 ; loss: 0.3884, average accuracy: 0.8499
+Epoch 26/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 480.97it/s]
+- Train metrics: accuracy: 0.8501 ; loss: 0.3879
+- Eval metrics: accuracy: 0.8499 ; loss: 0.3881
+- update_metrics metrics: accuracy: 0.8499 ; loss: 0.3881, average accuracy: 0.8499
+Epoch 27/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 472.95it/s]
+- Train metrics: accuracy: 0.8505 ; loss: 0.3876
+- Eval metrics: accuracy: 0.8500 ; loss: 0.3878
+- update_metrics metrics: accuracy: 0.8500 ; loss: 0.3878, average accuracy: 0.8500
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-26
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-26
+Epoch 28/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 486.03it/s]
+- Train metrics: accuracy: 0.8504 ; loss: 0.3874
+- Eval metrics: accuracy: 0.8501 ; loss: 0.3876
+- update_metrics metrics: accuracy: 0.8501 ; loss: 0.3876, average accuracy: 0.8501
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-27
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-27
+Epoch 29/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 494.93it/s]
+- Train metrics: accuracy: 0.8507 ; loss: 0.3872
+- Eval metrics: accuracy: 0.8502 ; loss: 0.3875
+- update_metrics metrics: accuracy: 0.8502 ; loss: 0.3875, average accuracy: 0.8502
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-28
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-28
+Epoch 30/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 478.90it/s]
+- Train metrics: accuracy: 0.8508 ; loss: 0.3870
+- Eval metrics: accuracy: 0.8501 ; loss: 0.3874
+- update_metrics metrics: accuracy: 0.8501 ; loss: 0.3874, average accuracy: 0.8501
+Epoch 31/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 482.52it/s]
+- Train metrics: accuracy: 0.8508 ; loss: 0.3869
+- Eval metrics: accuracy: 0.8502 ; loss: 0.3873
+- update_metrics metrics: accuracy: 0.8502 ; loss: 0.3873, average accuracy: 0.8502
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-30
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-30
+Epoch 32/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 474.76it/s]
+- Train metrics: accuracy: 0.8505 ; loss: 0.3868
+- Eval metrics: accuracy: 0.8503 ; loss: 0.3871
+- update_metrics metrics: accuracy: 0.8503 ; loss: 0.3871, average accuracy: 0.8503
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-31
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-31
+Epoch 33/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 482.99it/s]
+- Train metrics: accuracy: 0.8506 ; loss: 0.3867
+- Eval metrics: accuracy: 0.8502 ; loss: 0.3870
+- update_metrics metrics: accuracy: 0.8502 ; loss: 0.3870, average accuracy: 0.8502
+Epoch 34/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 477.50it/s]
+- Train metrics: accuracy: 0.8509 ; loss: 0.3866
+- Eval metrics: accuracy: 0.8502 ; loss: 0.3869
+- update_metrics metrics: accuracy: 0.8502 ; loss: 0.3869, average accuracy: 0.8502
+Epoch 35/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 468.20it/s]
+- Train metrics: accuracy: 0.8510 ; loss: 0.3866
+- Eval metrics: accuracy: 0.8503 ; loss: 0.3868
+- update_metrics metrics: accuracy: 0.8503 ; loss: 0.3868, average accuracy: 0.8502
+Epoch 36/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 482.05it/s]
+- Train metrics: accuracy: 0.8509 ; loss: 0.3865
+- Eval metrics: accuracy: 0.8502 ; loss: 0.3868
+- update_metrics metrics: accuracy: 0.8502 ; loss: 0.3868, average accuracy: 0.8502
+Epoch 37/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 470.09it/s]
+- Train metrics: accuracy: 0.8507 ; loss: 0.3864
+- Eval metrics: accuracy: 0.8501 ; loss: 0.3867
+- update_metrics metrics: accuracy: 0.8501 ; loss: 0.3867, average accuracy: 0.8501
+Epoch 38/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 468.98it/s]
+- Train metrics: accuracy: 0.8507 ; loss: 0.3863
+- Eval metrics: accuracy: 0.8501 ; loss: 0.3866
+- update_metrics metrics: accuracy: 0.8501 ; loss: 0.3866, average accuracy: 0.8501
+Epoch 39/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 485.78it/s]
+- Train metrics: accuracy: 0.8505 ; loss: 0.3863
+- Eval metrics: accuracy: 0.8500 ; loss: 0.3866
+- update_metrics metrics: accuracy: 0.8500 ; loss: 0.3866, average accuracy: 0.8500
+Epoch 40/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 467.34it/s]
+- Train metrics: accuracy: 0.8503 ; loss: 0.3862
+- Eval metrics: accuracy: 0.8500 ; loss: 0.3865
+- update_metrics metrics: accuracy: 0.8500 ; loss: 0.3865, average accuracy: 0.8500
+Epoch 41/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 466.80it/s]
+- Train metrics: accuracy: 0.8509 ; loss: 0.3861
+- Eval metrics: accuracy: 0.8500 ; loss: 0.3864
+- update_metrics metrics: accuracy: 0.8500 ; loss: 0.3864, average accuracy: 0.8500
+Epoch 42/60
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 493.37it/s]
+- Train metrics: accuracy: 0.8508 ; loss: 0.3860
+- Eval metrics: accuracy: 0.8501 ; loss: 0.3864
+- update_metrics metrics: accuracy: 0.8501 ; loss: 0.3864, average accuracy: 0.8501
+Early stopping at epoch 43/60
+global_epoch: 42 epoch(s) at learner 0
+total time: 106.39410185813904 seconds ---
+(base) Xiaofengs-MacBook-Pro:src_fc_group xiaofengzhu$ python evaluate.py
+Using TensorFlow backend.
+Creating the dataset...
+- done.
+Creating the model...
+WARNING:tensorflow:From /Users/xiaofengzhu/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /Users/xiaofengzhu/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /Users/xiaofengzhu/Documents/continual_learning/src_fc_group/model/modeling.py:240: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /Users/xiaofengzhu/Documents/continual_learning/src_fc_group/model/modeling.py:240: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /Users/xiaofengzhu/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/ops/metrics_impl.py:363: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+From /Users/xiaofengzhu/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/ops/metrics_impl.py:363: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+- done.
+Starting evaluation
+2019-12-23 17:51:32.104652: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+WARNING:tensorflow:From /Users/xiaofengzhu/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+From /Users/xiaofengzhu/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+INFO:tensorflow:Restoring parameters from experiments/base_model/best_weights/after-epoch-31
+Restoring parameters from experiments/base_model/best_weights/after-epoch-31
+- Eval metrics: accuracy: 0.8514
+- update_metrics metrics: accuracy: 0.8514, average accuracy: 0.8514

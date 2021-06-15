@@ -1,0 +1,3999 @@
+Creating the datasets...
+params.train_size: 4800.0
+- done.
+Creating the model...
+From /Users/xiaofengzhu/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /Users/xiaofengzhu/Documents/GitHub/continual_learning/src_fc_rl_group/model/modeling.py:139: Print (from tensorflow.python.ops.logging_ops) is deprecated and will be removed after 2018-08-20.
+Instructions for updating:
+Use tf.print instead of tf.Print. Note that tf.print returns a no-output operator that directly prints the output. Outside of defuns or eager mode, this operator will not be executed unless it is directly specified in session.run or used as a control dependency for other operators. This is only a concern in graph mode. Below is an example of how to ensure tf.print executes in graph mode:
+```python
+    sess = tf.Session()
+    with sess.as_default():
+        tensor = tf.range(10)
+        print_op = tf.print(tensor)
+        with tf.control_dependencies([print_op]):
+          out = tf.add(tensor, tensor)
+        sess.run(out)
+    ```
+Additionally, to use tf.print in python 2.7, users must make sure to import
+the following:
+
+  `from __future__ import print_function`
+
+From /Users/xiaofengzhu/Documents/GitHub/continual_learning/src_fc_rl_group/model/modeling.py:156: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /Users/xiaofengzhu/Documents/GitHub/continual_learning/src_fc_rl_group/model/modeling.py:664: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+From /Users/xiaofengzhu/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/ops/metrics_impl.py:363: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+- done.
+Starting training for at most 10 epoch(s) for the initial learner
+Restoring parameters from experiments/base_model/best_weights/after-epoch-20
+From /Users/xiaofengzhu/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+Restoring parameters from experiments/base_model/best_weights/after-epoch-20
+[0.0, -inf]
+Epoch 21/30
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([14.], dtype=float32)]
+****action_var at train_sess:
+ [array([14.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([18.], dtype=float32)]
+****action_var at train_sess:
+ [array([18.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([15.], dtype=float32)]
+****action_var at train_sess:
+ [array([15.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([16.], dtype=float32)]
+****action_var at train_sess:
+ [array([16.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([15.], dtype=float32)]
+****action_var at train_sess:
+ [array([15.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([18.], dtype=float32)]
+****action_var at train_sess:
+ [array([18.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([12.], dtype=float32)]
+****action_var at train_sess:
+ [array([12.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([18.], dtype=float32)]
+****action_var at train_sess:
+ [array([18.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([13.], dtype=float32)]
+****action_var at train_sess:
+ [array([13.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([17.], dtype=float32)]
+****action_var at train_sess:
+ [array([17.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([17.], dtype=float32)]
+****action_var at train_sess:
+ [array([17.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([11.], dtype=float32)]
+****action_var at train_sess:
+ [array([11.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([12.], dtype=float32)]
+****action_var at train_sess:
+ [array([12.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([16.], dtype=float32)]
+****action_var at train_sess:
+ [array([16.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8560 ; loss: 0.3800
+- Eval metrics: accuracy: 0.8540 ; loss: 0.3787
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-20
+Epoch 22/30
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([10.], dtype=float32)]
+****action_var at train_sess:
+ [array([10.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([11.], dtype=float32)]
+****action_var at train_sess:
+ [array([11.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([10.], dtype=float32)]
+****action_var at train_sess:
+ [array([10.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([15.], dtype=float32)]
+****action_var at train_sess:
+ [array([15.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([16.], dtype=float32)]
+****action_var at train_sess:
+ [array([16.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([10.], dtype=float32)]
+****action_var at train_sess:
+ [array([10.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([18.], dtype=float32)]
+****action_var at train_sess:
+ [array([18.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([14.], dtype=float32)]
+****action_var at train_sess:
+ [array([14.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([14.], dtype=float32)]
+****action_var at train_sess:
+ [array([14.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([13.], dtype=float32)]
+****action_var at train_sess:
+ [array([13.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([11.], dtype=float32)]
+****action_var at train_sess:
+ [array([11.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([11.], dtype=float32)]
+****action_var at train_sess:
+ [array([11.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8558 ; loss: 0.3808
+- Eval metrics: accuracy: 0.8573 ; loss: 0.3826
+From /Users/xiaofengzhu/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/training/saver.py:966: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-21
+Epoch 23/30
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([12.], dtype=float32)]
+****action_var at train_sess:
+ [array([12.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([17.], dtype=float32)]
+****action_var at train_sess:
+ [array([17.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([16.], dtype=float32)]
+****action_var at train_sess:
+ [array([16.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([12.], dtype=float32)]
+****action_var at train_sess:
+ [array([12.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([18.], dtype=float32)]
+****action_var at train_sess:
+ [array([18.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([12.], dtype=float32)]
+****action_var at train_sess:
+ [array([12.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([13.], dtype=float32)]
+****action_var at train_sess:
+ [array([13.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([17.], dtype=float32)]
+****action_var at train_sess:
+ [array([17.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([18.], dtype=float32)]
+****action_var at train_sess:
+ [array([18.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([10.], dtype=float32)]
+****action_var at train_sess:
+ [array([10.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([18.], dtype=float32)]
+****action_var at train_sess:
+ [array([18.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([18.], dtype=float32)]
+****action_var at train_sess:
+ [array([18.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([15.], dtype=float32)]
+****action_var at train_sess:
+ [array([15.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([17.], dtype=float32)]
+****action_var at train_sess:
+ [array([17.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([16.], dtype=float32)]
+****action_var at train_sess:
+ [array([16.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([13.], dtype=float32)]
+- Train metrics: accuracy: 0.8548 ; loss: 0.3827
+- Eval metrics: accuracy: 0.8565 ; loss: 0.3804
+Epoch 24/30
+****action_var at train_sess:
+ [array([13.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([13.], dtype=float32)]
+****action_var at train_sess:
+ [array([13.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([12.], dtype=float32)]
+****action_var at train_sess:
+ [array([12.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([13.], dtype=float32)]
+****action_var at train_sess:
+ [array([13.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([15.], dtype=float32)]
+****action_var at train_sess:
+ [array([15.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([12.], dtype=float32)]
+****action_var at train_sess:
+ [array([12.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([14.], dtype=float32)]
+****action_var at train_sess:
+ [array([14.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([12.], dtype=float32)]
+****action_var at train_sess:
+ [array([12.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([17.], dtype=float32)]
+****action_var at train_sess:
+ [array([17.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+- Train metrics: accuracy: 0.8550 ; loss: 0.3816
+- Eval metrics: accuracy: 0.8552 ; loss: 0.3805
+Epoch 25/30
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([16.], dtype=float32)]
+****action_var at train_sess:
+ [array([16.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([14.], dtype=float32)]
+****action_var at train_sess:
+ [array([14.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([11.], dtype=float32)]
+****action_var at train_sess:
+ [array([11.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([11.], dtype=float32)]
+****action_var at train_sess:
+ [array([11.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([14.], dtype=float32)]
+****action_var at train_sess:
+ [array([14.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([18.], dtype=float32)]
+****action_var at train_sess:
+ [array([18.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+- Train metrics: accuracy: 0.8544 ; loss: 0.3828
+- Eval metrics: accuracy: 0.8546 ; loss: 0.3819
+Epoch 26/30
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([10.], dtype=float32)]
+****action_var at train_sess:
+ [array([10.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([17.], dtype=float32)]
+****action_var at train_sess:
+ [array([17.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([17.], dtype=float32)]
+****action_var at train_sess:
+ [array([17.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([14.], dtype=float32)]
+****action_var at train_sess:
+ [array([14.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([14.], dtype=float32)]
+****action_var at train_sess:
+ [array([14.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([17.], dtype=float32)]
+****action_var at train_sess:
+ [array([17.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([12.], dtype=float32)]
+****action_var at train_sess:
+ [array([12.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([18.], dtype=float32)]
+****action_var at train_sess:
+ [array([18.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([17.], dtype=float32)]
+- Train metrics: accuracy: 0.8548 ; loss: 0.3827
+- Eval metrics: accuracy: 0.8550 ; loss: 0.3806
+Epoch 27/30
+****action_var at train_sess:
+ [array([17.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([11.], dtype=float32)]
+****action_var at train_sess:
+ [array([11.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([17.], dtype=float32)]
+****action_var at train_sess:
+ [array([17.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([12.], dtype=float32)]
+****action_var at train_sess:
+ [array([12.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([15.], dtype=float32)]
+****action_var at train_sess:
+ [array([15.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([12.], dtype=float32)]
+****action_var at train_sess:
+ [array([12.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([10.], dtype=float32)]
+****action_var at train_sess:
+ [array([10.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([18.], dtype=float32)]
+****action_var at train_sess:
+ [array([18.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([12.], dtype=float32)]
+****action_var at train_sess:
+ [array([12.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([12.], dtype=float32)]
+****action_var at train_sess:
+ [array([12.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([18.], dtype=float32)]
+****action_var at train_sess:
+ [array([18.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([16.], dtype=float32)]
+****action_var at train_sess:
+ [array([16.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([16.], dtype=float32)]
+****action_var at train_sess:
+ [array([16.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([17.], dtype=float32)]
+****action_var at train_sess:
+ [array([17.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8546 ; loss: 0.3812
+- Eval metrics: accuracy: 0.8548 ; loss: 0.3811
+Epoch 28/30
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([14.], dtype=float32)]
+****action_var at train_sess:
+ [array([14.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([16.], dtype=float32)]
+****action_var at train_sess:
+ [array([16.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([13.], dtype=float32)]
+****action_var at train_sess:
+ [array([13.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([17.], dtype=float32)]
+****action_var at train_sess:
+ [array([17.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([14.], dtype=float32)]
+****action_var at train_sess:
+ [array([14.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([13.], dtype=float32)]
+****action_var at train_sess:
+ [array([13.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([10.], dtype=float32)]
+****action_var at train_sess:
+ [array([10.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([14.], dtype=float32)]
+****action_var at train_sess:
+ [array([14.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([12.], dtype=float32)]
+****action_var at train_sess:
+ [array([12.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([10.], dtype=float32)]
+****action_var at train_sess:
+ [array([10.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([12.], dtype=float32)]
+****action_var at train_sess:
+ [array([12.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([13.], dtype=float32)]
+****action_var at train_sess:
+ [array([13.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+- Train metrics: accuracy: 0.8552 ; loss: 0.3828
+- Eval metrics: accuracy: 0.8546 ; loss: 0.3826
+Epoch 29/30
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([17.], dtype=float32)]
+****action_var at train_sess:
+ [array([17.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([17.], dtype=float32)]
+****action_var at train_sess:
+ [array([17.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([13.], dtype=float32)]
+****action_var at train_sess:
+ [array([13.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([14.], dtype=float32)]
+****action_var at train_sess:
+ [array([14.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([18.], dtype=float32)]
+****action_var at train_sess:
+ [array([18.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([16.], dtype=float32)]
+****action_var at train_sess:
+ [array([16.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([12.], dtype=float32)]
+****action_var at train_sess:
+ [array([12.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([18.], dtype=float32)]
+****action_var at train_sess:
+ [array([18.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+- Train metrics: accuracy: 0.8558 ; loss: 0.3828
+- Eval metrics: accuracy: 0.8542 ; loss: 0.3809
+Epoch 30/30
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([1.], dtype=float32)]
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([14.], dtype=float32)]
+****action_var at train_sess:
+ [array([14.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([18.], dtype=float32)]
+****action_var at train_sess:
+ [array([18.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([15.], dtype=float32)]
+****action_var at train_sess:
+ [array([15.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([11.], dtype=float32)]
+****action_var at train_sess:
+ [array([11.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([11.], dtype=float32)]
+****action_var at train_sess:
+ [array([11.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([10.], dtype=float32)]
+****action_var at train_sess:
+ [array([10.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([15.], dtype=float32)]
+****action_var at train_sess:
+ [array([15.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([13.], dtype=float32)]
+****action_var at train_sess:
+ [array([13.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([10.], dtype=float32)]
+****action_var at train_sess:
+ [array([10.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([10.], dtype=float32)]
+****action_var at train_sess:
+ [array([10.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([17.], dtype=float32)]
+****action_var at train_sess:
+ [array([17.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+- Train metrics: accuracy: 0.8565 ; loss: 0.3816
+- Eval metrics: accuracy: 0.8535 ; loss: 0.3799
+Epoch 31/40
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([10.], dtype=float32)]
+****action_var at train_sess:
+ [array([10.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([17.], dtype=float32)]
+****action_var at train_sess:
+ [array([17.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([17.], dtype=float32)]
+****action_var at train_sess:
+ [array([17.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([18.], dtype=float32)]
+****action_var at train_sess:
+ [array([18.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([17.], dtype=float32)]
+****action_var at train_sess:
+ [array([17.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([10.], dtype=float32)]
+****action_var at train_sess:
+ [array([10.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+- Train metrics: accuracy: 0.8556 ; loss: 0.3806
+- Eval metrics: accuracy: 0.8542 ; loss: 0.3807
+Epoch 32/40
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([15.], dtype=float32)]
+****action_var at train_sess:
+ [array([15.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([10.], dtype=float32)]
+****action_var at train_sess:
+ [array([10.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([18.], dtype=float32)]
+****action_var at train_sess:
+ [array([18.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([18.], dtype=float32)]
+****action_var at train_sess:
+ [array([18.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([11.], dtype=float32)]
+****action_var at train_sess:
+ [array([11.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([10.], dtype=float32)]
+****action_var at train_sess:
+ [array([10.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([13.], dtype=float32)]
+****action_var at train_sess:
+ [array([13.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([7.], dtype=float32)]
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([13.], dtype=float32)]
+****action_var at train_sess:
+ [array([13.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([17.], dtype=float32)]
+****action_var at train_sess:
+ [array([17.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([6.], dtype=float32)]
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+- Train metrics: accuracy: 0.8554 ; loss: 0.3819
+- Eval metrics: accuracy: 0.8542 ; loss: 0.3812
+Epoch 33/40
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([3.], dtype=float32)]
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([12.], dtype=float32)]
+****action_var at train_sess:
+ [array([12.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([12.], dtype=float32)]
+****action_var at train_sess:
+ [array([12.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([11.], dtype=float32)]
+****action_var at train_sess:
+ [array([11.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([14.], dtype=float32)]
+****action_var at train_sess:
+ [array([14.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([11.], dtype=float32)]
+****action_var at train_sess:
+ [array([11.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([13.], dtype=float32)]
+****action_var at train_sess:
+ [array([13.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([15.], dtype=float32)]
+****action_var at train_sess:
+ [array([15.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([8.], dtype=float32)]
+****action_var at train_sess:
+ [array([8.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([9.], dtype=float32)]
+****action_var at train_sess:
+ [array([9.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([15.], dtype=float32)]
+****action_var at train_sess:
+ [array([15.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([10.], dtype=float32)]
+****action_var at train_sess:
+ [array([10.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([4.], dtype=float32)]
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([10.], dtype=float32)]
+****action_var at train_sess:
+ [array([10.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([0.], dtype=float32)]
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([2.], dtype=float32)]
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([19.], dtype=float32)]
+****action_var at train_sess:
+ [array([19.], dtype=float32)]
+******updated action_var at train_sess:
+ [array([5.], dtype=float32)]
+- Train metrics: accuracy: 0.8552 ; loss: 0.3817
+- Eval metrics: accuracy: 0.8544 ; loss: 0.3812
+
+train num_steps: 75.0
+weight_sums_of_reward: [18.301878571510315, 0.0, 0.0, 0.0, 0.0, -6.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 25.698121428489685]
+len(top_sorted_index) in training: 9
+sorted_index:
+ [2, 57, 31, 7, 8, 17, 20, 24, 25]
+- take_train_samples_sess metrics: accuracy: 0.8540 ; loss: 0.3840
+global_epoch: 40 epoch(s) at learner 0
+total time: 168.9012610912323 seconds ---

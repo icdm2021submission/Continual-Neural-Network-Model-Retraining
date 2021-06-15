@@ -1,0 +1,719 @@
+Creating the datasets...
+train_size: 25000.0
+- done.
+Creating the model...
+From /home/xiaofengzhu/anaconda3/envs/venv/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /media/xiaofengzhu/DATA/GitHub/continual_learning/src_rnn_rl_group/model/modeling.py:312: BasicLSTMCell.__init__ (from tensorflow.python.ops.rnn_cell_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+This class is equivalent as tf.keras.layers.LSTMCell, and will be replaced by that in Tensorflow 2.0.
+From /media/xiaofengzhu/DATA/GitHub/continual_learning/src_rnn_rl_group/model/modeling.py:313: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+From /media/xiaofengzhu/DATA/GitHub/continual_learning/src_rnn_rl_group/model/modeling.py:317: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+From /media/xiaofengzhu/DATA/GitHub/continual_learning/src_rnn_rl_group/model/modeling.py:339: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See `tf.nn.softmax_cross_entropy_with_logits_v2`.
+
+From /home/xiaofengzhu/anaconda3/envs/venv/lib/python3.6/site-packages/tensorflow/python/ops/array_grad.py:425: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+From /home/xiaofengzhu/anaconda3/envs/venv/lib/python3.6/site-packages/tensorflow/python/ops/metrics_impl.py:363: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+- done.
+Starting training for at most 10 epoch(s) for the initial learner
+Restoring parameters from experiments/base_model/best_weights/after-epoch-50
+From /home/xiaofengzhu/anaconda3/envs/venv/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+Restoring parameters from experiments/base_model/best_weights/after-epoch-50
+[0.0, -inf]
+Epoch 51/60
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+*****old_index is 7, loss_val is 32321559130.69817
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 7, loss_val is 29939854844.694042
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 7, loss_val is 29317596310.75724
+- Train metrics: accuracy: 0.5729 ; loss: 0.6907
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.5638 ; loss: 0.6907
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-50
+Epoch 52/60
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 4, loss_val is 28571479234.690224
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 4, loss_val is 26071718606.782883
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+*****old_index is 4, loss_val is 33650051456.74199
+- Train metrics: accuracy: 0.5469 ; loss: 0.6902
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.5706 ; loss: 0.6906
+From /home/xiaofengzhu/anaconda3/envs/venv/lib/python3.6/site-packages/tensorflow/python/training/saver.py:966: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-51
+Epoch 53/60
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 4, loss_val is 27231997512.69518
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+*****old_index is 4, loss_val is 23807507902.699722
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+*****old_index is 4, loss_val is 31262048334.84403
+- Train metrics: accuracy: 0.5938 ; loss: 0.6903
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.5750 ; loss: 0.6904
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-52
+Epoch 54/60
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 2, loss_val is 25061239988.721577
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 2, loss_val is 25559093070.69003
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+*****old_index is 2, loss_val is 32059232248.699448
+- Train metrics: accuracy: 0.6198 ; loss: 0.6903
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.5765 ; loss: 0.6903
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-53
+Epoch 55/60
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 2, loss_val is 26857957354.725765
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 2, loss_val is 27852391812.69622
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+*****old_index is 2, loss_val is 28393038246.719536
+- Train metrics: accuracy: 0.5573 ; loss: 0.6900
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.5695 ; loss: 0.6900
+Epoch 56/60
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+*****old_index is 7, loss_val is 1619993484.7185895
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 7, loss_val is 29138080712.692547
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 7, loss_val is 23805599844.721165
+- Train metrics: accuracy: 0.5625 ; loss: 0.6908
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.5686 ; loss: 0.6898
+Epoch 57/60
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 4, loss_val is 24946379464.69352
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 4, loss_val is 33333617670.745224
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+*****old_index is 4, loss_val is 26773262580.695366
+- Train metrics: accuracy: 0.5417 ; loss: 0.6914
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.5700 ; loss: 0.6896
+Epoch 58/60
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 4, loss_val is 26501942430.6999
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+*****old_index is 4, loss_val is 23791711142.69043
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 4, loss_val is 31852319014.722298
+- Train metrics: accuracy: 0.5781 ; loss: 0.6893
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.5723 ; loss: 0.6894
+Epoch 59/60
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 4, loss_val is 28344993652.710697
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 4, loss_val is 25538118588.69623
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+*****old_index is 4, loss_val is 24178326842.7283
+- Train metrics: accuracy: 0.5781 ; loss: 0.6907
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.5699 ; loss: 0.6892
+Epoch 60/60
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 2, loss_val is 31499076302.691402
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 2, loss_val is 28751640784.699272
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+*****old_index is 2, loss_val is 29960992580.734406
+- Train metrics: accuracy: 0.5469 ; loss: 0.6897
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.5695 ; loss: 0.6890
+Epoch 61/100
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 4, loss_val is 26317249482.753143
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 4, loss_val is 26115313658.698853
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 4, loss_val is 29492488688.71893
+- Train metrics: accuracy: 0.5677 ; loss: 0.6906
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.5771 ; loss: 0.6889
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-60
+Epoch 62/100
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 2, loss_val is 27529742094.692028
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 2, loss_val is 29399146268.708057
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+*****old_index is 2, loss_val is 29040060944.69602
+- Train metrics: accuracy: 0.5729 ; loss: 0.6903
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.5868 ; loss: 0.6887
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-61
+Epoch 63/100
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 4, loss_val is 26510088258.770905
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 4, loss_val is 32102113402.726597
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 4, loss_val is 30950028702.69895
+- Train metrics: accuracy: 0.6094 ; loss: 0.6895
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.5882 ; loss: 0.6885
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-62
+Epoch 64/100
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 2, loss_val is 26740296418.76922
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 2, loss_val is 32065917648.71586
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+*****old_index is 2, loss_val is 26001141170.751778
+- Train metrics: accuracy: 0.6406 ; loss: 0.6869
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.5855 ; loss: 0.6883
+Epoch 65/100
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 0, loss_val is 30523443144.69222
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 0, loss_val is 29157490800.829327
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 0, loss_val is 27516145214.69176
+- Train metrics: accuracy: 0.5156 ; loss: 0.6908
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.5878 ; loss: 0.6880
+Epoch 66/100
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 0, loss_val is 27793285272.713467
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 0, loss_val is 28343300864.69485
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 0, loss_val is 25753155396.69462
+- Train metrics: accuracy: 0.5938 ; loss: 0.6870
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.5906 ; loss: 0.6878
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-65
+Epoch 67/100
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 4, loss_val is 28395016122.90081
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+*****old_index is 4, loss_val is 30664942240.6847
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 4, loss_val is 24832323276.965176
+- Train metrics: accuracy: 0.6302 ; loss: 0.6860
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.5935 ; loss: 0.6875
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-66
+Epoch 68/100
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 2, loss_val is 29905060248.695312
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 2, loss_val is 30067581960.690907
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 2, loss_val is 25663162188.6876
+- Train metrics: accuracy: 0.6042 ; loss: 0.6874
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.5927 ; loss: 0.6871
+Epoch 69/100
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 2, loss_val is 28087004412.86993
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 2, loss_val is 2065947197.4868243
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 2, loss_val is 27685420858.68653
+- Train metrics: accuracy: 0.6354 ; loss: 0.6869
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.5870 ; loss: 0.6867
+Epoch 70/100
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 0, loss_val is 26905975008.688007
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 0, loss_val is 25293066156.734985
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 0, loss_val is 28737557972.729347
+- Train metrics: accuracy: 0.5781 ; loss: 0.6873
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.5925 ; loss: 0.6863
+Epoch 71/100
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 0, loss_val is 31688144752.845425
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 0, loss_val is 24669004502.734333
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 0, loss_val is 25633575554.708656
+- Train metrics: accuracy: 0.5417 ; loss: 0.6884
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.6003 ; loss: 0.6858
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-70
+Epoch 72/100
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 2, loss_val is 31005723144.685844
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 2, loss_val is 25395705964.7186
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 2, loss_val is 26166066654.85179
+- Train metrics: accuracy: 0.5990 ; loss: 0.6870
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.5972 ; loss: 0.6854
+Epoch 73/100
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 0, loss_val is 25828219420.686886
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 0, loss_val is 29397342450.68836
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 0, loss_val is 26290030624.771027
+- Train metrics: accuracy: 0.6146 ; loss: 0.6836
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.5988 ; loss: 0.6850
+Epoch 74/100
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 0, loss_val is 31554852544.723625
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+*****old_index is 0, loss_val is 24764070222.852314
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 0, loss_val is 30722842604.989536
+- Train metrics: accuracy: 0.5052 ; loss: 0.6914
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.6025 ; loss: 0.6844
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-73
+Epoch 75/100
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 0, loss_val is 30621573836.688686
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 0, loss_val is 26553987532.685528
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 0, loss_val is 27064089764.708035
+- Train metrics: accuracy: 0.6042 ; loss: 0.6852
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.6095 ; loss: 0.6838
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-74
+Epoch 76/100
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 2, loss_val is 27844353490.76552
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+*****old_index is 2, loss_val is 29492821590.69324
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 2, loss_val is 32123576103.01276
+- Train metrics: accuracy: 0.5938 ; loss: 0.6870
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.6236 ; loss: 0.6833
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-75
+Epoch 77/100
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 2, loss_val is 27850204420.7294
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 2, loss_val is 31647979274.958855
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 2, loss_val is 24062971104.699802
+- Train metrics: accuracy: 0.5885 ; loss: 0.6828
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.6156 ; loss: 0.6825
+Epoch 78/100
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 4, loss_val is 26816801206.68962
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 4, loss_val is 35867081366.84752
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 4, loss_val is 29545874256.950264
+- Train metrics: accuracy: 0.5833 ; loss: 0.6862
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.6198 ; loss: 0.6816
+Epoch 79/100
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 0, loss_val is 26001316198.977745
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 0, loss_val is 29997615096.68564
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+*****old_index is 0, loss_val is 29044006452.710552
+- Train metrics: accuracy: 0.6094 ; loss: 0.6810
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.6354 ; loss: 0.6806
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-78
+Epoch 80/100
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 4, loss_val is 28290824882.969307
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 4, loss_val is 30386474773.267914
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 4, loss_val is 24055930458.755795
+- Train metrics: accuracy: 0.6615 ; loss: 0.6770
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.6292 ; loss: 0.6791
+Epoch 81/100
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 2, loss_val is 23368074292.724007
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 2, loss_val is 33748216428.858498
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+*****old_index is 2, loss_val is 27873203330.75833
+- Train metrics: accuracy: 0.6458 ; loss: 0.6777
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.6191 ; loss: 0.6765
+Epoch 82/100
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 2, loss_val is 26311838032.846508
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+*****old_index is 2, loss_val is 27825482882.76984
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 2, loss_val is 1315611479.2039347
+- Train metrics: accuracy: 0.5938 ; loss: 0.6866
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.5759 ; loss: 0.6737
+Epoch 83/100
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 0, loss_val is 24786649652.72614
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 0, loss_val is 28218115480.839664
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 0, loss_val is 26977822616.906322
+- Train metrics: accuracy: 0.5365 ; loss: 0.6751
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.5582 ; loss: 0.6705
+Epoch 84/100
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+*****old_index is 5, loss_val is 32641381351.63811
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 5, loss_val is 29794369414.75825
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 5, loss_val is 26649707311.012318
+- Train metrics: accuracy: 0.5521 ; loss: 0.6759
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.5985 ; loss: 0.6673
+Epoch 85/100
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+*****old_index is 5, loss_val is 23143438734.804455
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 5, loss_val is 27741691406.7154
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 5, loss_val is 24233541073.75149
+- Train metrics: accuracy: 0.6354 ; loss: 0.6650
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.6294 ; loss: 0.6611
+Epoch 86/100
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 0, loss_val is 28506185457.188255
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+*****old_index is 0, loss_val is 28538717900.22336
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+*****old_index is 0, loss_val is 30754981264.490627
+- Train metrics: accuracy: 0.6458 ; loss: 0.6545
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.6742 ; loss: 0.6462
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-85
+Epoch 87/100
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+*****old_index is 5, loss_val is 26141609615.354034
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+*****old_index is 5, loss_val is 26369213143.827995
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+*****old_index is 5, loss_val is 28858782273.734158
+- Train metrics: accuracy: 0.6146 ; loss: 0.6557
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.5942 ; loss: 0.6571
+Epoch 88/100
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 4, loss_val is 27070756086.75653
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+*****old_index is 4, loss_val is 31160358421.82945
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 4, loss_val is 26081528444.221096
+- Train metrics: accuracy: 0.5573 ; loss: 0.6597
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.6350 ; loss: 0.6431
+Epoch 89/100
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 0, loss_val is 28384244304.059826
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 0, loss_val is 27458890878.99104
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+*****old_index is 0, loss_val is 26090848438.135838
+- Train metrics: accuracy: 0.6562 ; loss: 0.6516
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.6057 ; loss: 0.6453
+Epoch 90/100
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+*****old_index is 1, loss_val is 32477578476.374893
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+*****old_index is 1, loss_val is 32541626952.481567
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+*****old_index is 1, loss_val is 29517894741.036892
+- Train metrics: accuracy: 0.6146 ; loss: 0.6473
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.6426 ; loss: 0.6409
+Epoch 91/100
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+*****old_index is 1, loss_val is 28568901539.9624
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+*****old_index is 1, loss_val is 26293613926.08449
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+*****old_index is 1, loss_val is 31929529823.12374
+- Train metrics: accuracy: 0.6354 ; loss: 0.6413
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.6562 ; loss: 0.6402
+Epoch 92/100
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+*****old_index is 5, loss_val is 27512959771.21672
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+*****old_index is 5, loss_val is 30040696179.928978
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+*****old_index is 5, loss_val is 27656824175.58564
+- Train metrics: accuracy: 0.6667 ; loss: 0.6481
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.6830 ; loss: 0.6385
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-91
+Epoch 93/100
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+*****old_index is 3, loss_val is 29294348729.235584
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+*****old_index is 3, loss_val is 25787132474.754135
+****action_var at train_sess:
+ [array([7.], dtype=float32)]
+*****old_index is 3, loss_val is 28960080311.7462
+- Train metrics: accuracy: 0.6562 ; loss: 0.6564
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.6925 ; loss: 0.6388
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-92
+Epoch 94/100
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+*****old_index is 3, loss_val is 29311076819.409847
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+*****old_index is 3, loss_val is 22353226708.897324
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+*****old_index is 3, loss_val is 31989647621.122086
+- Train metrics: accuracy: 0.6979 ; loss: 0.6234
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.6918 ; loss: 0.6219
+Epoch 95/100
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+*****old_index is 1, loss_val is 29435358364.64471
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+*****old_index is 1, loss_val is 26108706709.104946
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+*****old_index is 1, loss_val is 28358153724.47459
+- Train metrics: accuracy: 0.6562 ; loss: 0.6287
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.6626 ; loss: 0.6136
+Epoch 96/100
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+*****old_index is 3, loss_val is 1707317525.2615771
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+*****old_index is 3, loss_val is 25932415616.967102
+****action_var at train_sess:
+ [array([5.], dtype=float32)]
+*****old_index is 3, loss_val is 25059247393.874424
+- Train metrics: accuracy: 0.6927 ; loss: 0.5537
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.6810 ; loss: 0.6099
+Epoch 97/100
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+*****old_index is 3, loss_val is 28893302422.132896
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+*****old_index is 3, loss_val is 33207401559.890617
+****action_var at train_sess:
+ [array([4.], dtype=float32)]
+*****old_index is 3, loss_val is 29939241018.904163
+- Train metrics: accuracy: 0.6719 ; loss: 0.6072
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.6689 ; loss: 0.6182
+Epoch 98/100
+****action_var at train_sess:
+ [array([2.], dtype=float32)]
+*****old_index is 2, loss_val is 24329566697.912163
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+*****old_index is 2, loss_val is 23789429444.767044
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+*****old_index is 2, loss_val is 26357700134.369957
+- Train metrics: accuracy: 0.6667 ; loss: 0.6051
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.6775 ; loss: 0.6143
+Epoch 99/100
+****action_var at train_sess:
+ [array([6.], dtype=float32)]
+*****old_index is 6, loss_val is 26402100536.30918
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+*****old_index is 6, loss_val is 29285038560.99627
+****action_var at train_sess:
+ [array([0.], dtype=float32)]
+*****old_index is 6, loss_val is 24459004785.45099
+- Train metrics: accuracy: 0.6771 ; loss: 0.6104
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.6994 ; loss: 0.6077
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-98
+Epoch 100/100
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+*****old_index is 3, loss_val is 30128222565.897045
+****action_var at train_sess:
+ [array([1.], dtype=float32)]
+*****old_index is 3, loss_val is 28782486657.49974
+****action_var at train_sess:
+ [array([3.], dtype=float32)]
+*****old_index is 3, loss_val is 29604986415.26837
+- Train metrics: accuracy: 0.6823 ; loss: 0.6285
+['model/cnn/rnn/basic_lstm_cell/kernel:0', 'model/cnn/rnn/basic_lstm_cell/bias:0', 'model/cnn/dense/kernel:0', 'model/cnn/dense/bias:0']
+- Eval metrics: accuracy: 0.7129 ; loss: 0.5982
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-99
+train num_steps: 391.0
+numbers_of_selections: [1, 0, 2]
+numbers_of_selections:
+ [1, 0, 2]
+len(top_sorted_index) in training: 3
+- take_train_samples_sess metrics: accuracy: 0.6771 ; loss: 0.6332
+global_epoch: 100 epoch(s) at learner 0
+total time: 2343.8747220039368 seconds ---
+CUDA_VISIBLE_DEVICES=1 python main.py --train_range 5 --loss_fn retrain_regu_mine --finetune true --log _Arms_8 --data_dir ../data/imdb --rl EI2 --num_clusters 8

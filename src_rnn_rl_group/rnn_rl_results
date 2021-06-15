@@ -1,0 +1,244 @@
+\subsection{IMDB Results}
+
+\begin{table}[t]
+\centering
+\begin{tabular}{|l|r|r|r|r|r|}
+& R 1 &  R 2  &  R 3 &  R 4 &  R 5 \\ \hline
+
+ArmsN &85.54 &86.11 &86.09 &86.67 &86.41\\ \hline
+New &85.46 &85.92 &86.07 &86.51 &86.57\\ \hline
+EWCN &85.64 &85.84 &85.96 &86.31 &86.59\\ \hline
+EWC &85.55 &\textbf{86.23} &86.33 &86.37 &86.83\\ \hline
+MAS &85.58 &85.87 &86.25 &86.59 &86.76\\ \hline
+RetrainRegu &85.55 &85.87 &86.28 &\textbf{86.79} &\textbf{86.87}\\ \hline
+Retrain &85.51 &86.06 &\textbf{86.37} &86.66 &86.80\\ \hline
+Selfless &\textbf{85.68} &85.94 &86.28 &86.37 &86.81\\ \hline
+\end{tabular}
+\caption{accuracy (\%) for imdb with the Greedy setting}
+\label{accuracy (\%) for imdb with the Greedy setting}
+\end{table}
+
+
+
+\begin{table}[t]
+\centering
+\begin{tabular}{|l|r|r|r|r|r|}
+& R 1 &  R 2  &  R 3 &  R 4 &  R 5 \\ \hline
+
+ArmsN &85.53 &85.96 &85.78 &86.33 &86.56\\ \hline
+New &85.74 &85.77 &85.91 &86.33 &86.48\\ \hline
+EWCN &\textbf{85.80} &85.18 &86.15 &86.53 &86.59\\ \hline
+EWC &85.71 &\textbf{86.03} &86.13 &86.47 &86.60\\ \hline
+MAS &85.44 &86.02 &85.84 &86.31 &86.59\\ \hline
+RetrainRegu &85.72 &85.95 &85.93 &86.51 &86.56\\ \hline
+Retrain &85.55 &85.76 &86.13 &86.45 &86.27\\ \hline
+Selfless &85.70 &85.99 &\textbf{86.38} &\textbf{86.73} &\textbf{86.64}\\ \hline
+\end{tabular}
+\caption{accuracy (\%) for imdb with the EI setting}
+\label{accuracy (\%) for imdb with the EI setting}
+\end{table}
+
+
+
+\begin{table}[t]
+\centering
+\begin{tabular}{|l|r|r|r|r|r|}
+& R 1 &  R 2  &  R 3 &  R 4 &  R 5 \\ \hline
+
+ArmsN &84.89 &85.38 &85.88 &86.10 &86.20\\ \hline
+New &85.28 &85.54 &85.58 &85.95 &\textbf{86.46}\\ \hline
+EWCN &85.30 &\textbf{85.90} &85.84 &86.04 &86.21\\ \hline
+EWC &85.30 &85.73 &\textbf{86.04} &\textbf{86.44} &86.35\\ \hline
+MAS &84.96 &85.66 &85.60 &86.01 &86.09\\ \hline
+RetrainRegu &\textbf{85.33} &85.46 &85.78 &86.36 &86.44\\ \hline
+Retrain &85.18 &85.52 &85.47 &85.67 &85.92\\ \hline
+Selfless &85.23 &85.62 &85.64 &86.10 &86.46\\ \hline
+\end{tabular}
+\caption{accuracy (\%) for imdb with the EI2 setting}
+\label{accuracy (\%) for imdb with the EI2 setting}
+\end{table}
+
+
+
+\begin{table}[t]
+\centering
+\begin{tabular}{|l|r|r|r|r|r|}
+& R 1 &  R 2  &  R 3 &  R 4 &  R 5 \\ \hline
+
+ArmsN &85.35 &85.85 &86.04 &86.33 &86.43\\ \hline
+New &85.32 &\textbf{85.91} &85.88 &\textbf{86.52} &\textbf{86.69}\\ \hline
+EWCN &\textbf{85.47} &85.77 &\textbf{86.12} &86.38 &86.50\\ \hline
+EWC &85.38 &85.91 &85.84 &86.28 &86.51\\ \hline
+MAS &85.38 &85.79 &86.10 &86.26 &86.52\\ \hline
+RetrainRegu &85.33 &85.83 &85.74 &86.22 &86.48\\ \hline
+Retrain &85.38 &85.71 &85.69 &86.42 &86.52\\ \hline
+Selfless &85.38 &85.79 &86.05 &86.30 &86.23\\ \hline
+\end{tabular}
+\caption{accuracy (\%) for imdb with the EXP3 setting}
+\label{accuracy (\%) for imdb with the EXP3 setting}
+\end{table}
+
+
+
+\begin{table}[t]
+\centering
+\begin{tabular}{|l|r|r|r|r|r|}
+& R 1 &  R 2  &  R 3 &  R 4 &  R 5 \\ \hline
+
+ArmsN &85.23 &85.46 &85.67 &85.84 &86.23\\ \hline
+New &85.29 &85.54 &85.72 &86.01 &86.19\\ \hline
+EWCN &\textbf{85.36} &85.45 &85.31 &\textbf{86.10} &85.98\\ \hline
+EWC &85.28 &85.84 &85.45 &86.04 &86.09\\ \hline
+MAS &85.15 &\textbf{85.97} &85.72 &85.94 &86.28\\ \hline
+RetrainRegu &84.99 &85.61 &85.47 &85.72 &86.37\\ \hline
+Retrain &85.18 &85.49 &\textbf{85.76} &85.96 &\textbf{86.48}\\ \hline
+Selfless &85.02 &85.03 &85.55 &85.92 &85.47\\ \hline
+\end{tabular}
+\caption{accuracy (\%) for imdb with the TS setting}
+\label{accuracy (\%) for imdb with the TS setting}
+\end{table}
+
+
+
+\begin{table}[t]
+\centering
+\begin{tabular}{|l|r|r|r|r|r|}
+& R 1 &  R 2  &  R 3 &  R 4 &  R 5 \\ \hline
+
+ArmsN &85.14 &85.64 &85.82 &86.15 &86.34\\ \hline
+New &85.14 &\textbf{85.65} &85.73 &86.16 &86.32\\ \hline
+EWCN &85.22 &85.65 &\textbf{85.96} &86.13 &\textbf{86.41}\\ \hline
+EWC &85.22 &85.65 &85.94 &86.15 &86.35\\ \hline
+MAS &\textbf{85.27} &85.55 &85.79 &85.95 &86.34\\ \hline
+RetrainRegu &85.22 &85.64 &85.94 &\textbf{86.17} &86.32\\ \hline
+Retrain &85.22 &85.65 &85.94 &86.15 &86.33\\ \hline
+Selfless &85.22 &85.65 &85.94 &86.15 &86.36\\ \hline
+\end{tabular}
+\caption{accuracy (\%) for imdb with the UCB setting}
+\label{accuracy (\%) for imdb with the UCB setting}
+\end{table}
+
+
+
+\subsection{REUTERS Results}
+
+\begin{table}[t]
+\centering
+\begin{tabular}{|l|r|r|r|r|r|}
+& R 1 &  R 2  &  R 3 &  R 4 &  R 5 \\ \hline
+
+ArmsN &55.95 &56.89 &56.73 &\textbf{58.07} &\textbf{59.59}\\ \hline
+New &55.38 &56.21 &57.00 &56.83 &58.48\\ \hline
+EWCN &55.86 &57.49 &57.25 &57.55 &58.12\\ \hline
+EWC &\textbf{57.15} &55.64 &57.60 &56.93 &56.96\\ \hline
+MAS &56.11 &56.21 &56.73 &57.25 &57.77\\ \hline
+RetrainRegu &56.32 &\textbf{57.77} &\textbf{57.73} &57.60 &59.42\\ \hline
+Retrain &56.19 &56.06 &57.15 &57.51 &59.53\\ \hline
+Selfless &57.12 &56.90 &56.38 &57.16 &57.60\\ \hline
+\end{tabular}
+\caption{accuracy (\%) for reuters with the Greedy setting}
+\label{accuracy (\%) for reuters with the Greedy setting}
+\end{table}
+
+
+
+\begin{table}[t]
+\centering
+\begin{tabular}{|l|r|r|r|r|r|}
+& R 1 &  R 2  &  R 3 &  R 4 &  R 5 \\ \hline
+
+ArmsN &56.63 &55.89 &56.38 &56.39 &57.34\\ \hline
+New &\textbf{57.19} &56.28 &55.51 &57.60 &58.26\\ \hline
+EWCN &55.54 &\textbf{57.41} &\textbf{57.49} &\textbf{57.88} &57.45\\ \hline
+EWC &56.08 &56.93 &56.81 &57.36 &57.54\\ \hline
+MAS &56.24 &56.97 &56.32 &56.58 &57.62\\ \hline
+RetrainRegu &56.11 &56.15 &56.28 &57.02 &\textbf{58.41}\\ \hline
+Retrain &57.15 &56.54 &57.41 &57.07 &57.84\\ \hline
+Selfless &56.28 &56.24 &57.32 &55.27 &57.60\\ \hline
+\end{tabular}
+\caption{accuracy (\%) for reuters with the EI setting}
+\label{accuracy (\%) for reuters with the EI setting}
+\end{table}
+
+
+
+\begin{table}[t]
+\centering
+\begin{tabular}{|l|r|r|r|r|r|}
+& R 1 &  R 2  &  R 3 &  R 4 &  R 5 \\ \hline
+
+ArmsN &55.71 &\textbf{56.97} &\textbf{56.97} &55.69 &56.68\\ \hline
+New &55.02 &56.54 &55.71 &\textbf{57.15} &57.10\\ \hline
+EWCN &\textbf{56.11} &56.16 &56.89 &56.34 &55.64\\ \hline
+EWC &55.45 &56.54 &56.80 &56.97 &56.90\\ \hline
+MAS &55.93 &56.71 &56.37 &55.51 &57.10\\ \hline
+RetrainRegu &55.76 &56.71 &56.54 &56.32 &55.73\\ \hline
+Retrain &55.80 &56.08 &56.12 &56.63 &\textbf{57.15}\\ \hline
+Selfless &55.28 &55.37 &56.19 &54.99 &55.76\\ \hline
+\end{tabular}
+\caption{accuracy (\%) for reuters with the EI2 setting}
+\label{accuracy (\%) for reuters with the EI2 setting}
+\end{table}
+
+
+
+\begin{table}[t]
+\centering
+\begin{tabular}{|l|r|r|r|r|r|}
+& R 1 &  R 2  &  R 3 &  R 4 &  R 5 \\ \hline
+
+ArmsN &54.67 &55.38 &55.34 &55.31 &56.09\\ \hline
+New &54.98 &55.64 &54.69 &\textbf{56.80} &55.66\\ \hline
+EWCN &55.08 &\textbf{55.99} &\textbf{56.38} &54.96 &57.03\\ \hline
+EWC &55.60 &55.35 &55.18 &56.05 &55.22\\ \hline
+MAS &\textbf{56.37} &54.95 &55.48 &56.37 &54.83\\ \hline
+RetrainRegu &54.43 &55.71 &55.43 &55.73 &\textbf{57.55}\\ \hline
+Retrain &55.19 &55.98 &55.77 &55.64 &56.25\\ \hline
+Selfless &55.58 &55.47 &56.08 &55.79 &55.35\\ \hline
+\end{tabular}
+\caption{accuracy (\%) for reuters with the EXP3 setting}
+\label{accuracy (\%) for reuters with the EXP3 setting}
+\end{table}
+
+
+
+\begin{table}[t]
+\centering
+\begin{tabular}{|l|r|r|r|r|r|}
+& R 1 &  R 2  &  R 3 &  R 4 &  R 5 \\ \hline
+
+ArmsN &\textbf{56.54} &55.60 &56.34 &56.94 &56.97\\ \hline
+New &55.63 &\textbf{57.06} &56.47 &56.77 &56.81\\ \hline
+EWCN &54.89 &56.24 &56.84 &57.02 &56.50\\ \hline
+EWC &55.67 &55.73 &56.42 &55.89 &55.98\\ \hline
+MAS &56.24 &56.50 &\textbf{57.03} &56.84 &56.41\\ \hline
+RetrainRegu &56.24 &56.02 &56.11 &56.03 &55.90\\ \hline
+Retrain &55.84 &55.73 &56.34 &56.21 &\textbf{57.58}\\ \hline
+Selfless &55.98 &56.45 &55.56 &\textbf{57.32} &57.36\\ \hline
+\end{tabular}
+\caption{accuracy (\%) for reuters with the TS setting}
+\label{accuracy (\%) for reuters with the TS setting}
+\end{table}
+
+
+
+\begin{table}[t]
+\centering
+\begin{tabular}{|l|r|r|r|r|r|}
+& R 1 &  R 2  &  R 3 &  R 4 &  R 5 \\ \hline
+
+ArmsN &56.54 &\textbf{57.02} &57.02 &56.22 &55.61\\ \hline
+New &55.28 &56.28 &56.35 &56.39 &56.44\\ \hline
+EWCN &56.19 &54.92 &56.94 &55.74 &56.29\\ \hline
+EWC &\textbf{56.76} &56.24 &57.84 &\textbf{57.49} &\textbf{57.18}\\ \hline
+MAS &56.50 &56.37 &56.93 &56.63 &56.08\\ \hline
+RetrainRegu &56.19 &56.15 &\textbf{58.10} &57.07 &56.15\\ \hline
+Retrain &56.67 &56.93 &56.29 &56.94 &56.89\\ \hline
+Selfless &55.89 &57.02 &56.60 &55.82 &55.95\\ \hline
+\end{tabular}
+\caption{accuracy (\%) for reuters with the UCB setting}
+\label{accuracy (\%) for reuters with the UCB setting}
+\end{table}
+
+
+

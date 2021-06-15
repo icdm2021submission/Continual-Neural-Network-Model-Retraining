@@ -1,0 +1,125 @@
+Epoch 1/20
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 375/375 [00:00<00:00, 430.06it/s]
+- Train metrics: accuracy: 0.8477 ; loss: 0.3958
+- Eval metrics: accuracy: 0.8487 ; loss: 0.3910
+- update_metrics metrics: accuracy: 0.8487 ; loss: 0.3910, average accuracy: 0.8488
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-0
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-0
+Epoch 2/20
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 750/750 [00:01<00:00, 456.79it/s]
+- Train metrics: accuracy: 0.8478 ; loss: 0.3930
+- Eval metrics: accuracy: 0.8492 ; loss: 0.3902
+- update_metrics metrics: accuracy: 0.8492 ; loss: 0.3902, average accuracy: 0.8492
+WARNING:tensorflow:From /Users/xiaofengzhu/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/training/saver.py:966: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+From /Users/xiaofengzhu/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/training/saver.py:966: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-1
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-1
+Epoch 3/20
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 750/750 [00:01<00:00, 459.68it/s]
+- Train metrics: accuracy: 0.8480 ; loss: 0.3926
+- Eval metrics: accuracy: 0.8493 ; loss: 0.3900
+- update_metrics metrics: accuracy: 0.8493 ; loss: 0.3900, average accuracy: 0.8493
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-2
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-2
+Epoch 4/20
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 750/750 [00:01<00:00, 458.71it/s]
+- Train metrics: accuracy: 0.8481 ; loss: 0.3925
+- Eval metrics: accuracy: 0.8494 ; loss: 0.3898
+- update_metrics metrics: accuracy: 0.8494 ; loss: 0.3898, average accuracy: 0.8494
+- Make a copy of cnn vars, saving in experiments/base_model/best_weights/after-epoch-3
+- Found new best metric score, saving in experiments/base_model/best_weights/after-epoch-3
+Epoch 5/20
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 750/750 [00:01<00:00, 453.56it/s]
+- Train metrics: accuracy: 0.8482 ; loss: 0.3925
+- Eval metrics: accuracy: 0.8493 ; loss: 0.3898
+- update_metrics metrics: accuracy: 0.8493 ; loss: 0.3898, average accuracy: 0.8493
+Epoch 6/20
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 750/750 [00:01<00:00, 454.28it/s]
+- Train metrics: accuracy: 0.8481 ; loss: 0.3924
+- Eval metrics: accuracy: 0.8494 ; loss: 0.3897
+- update_metrics metrics: accuracy: 0.8494 ; loss: 0.3897, average accuracy: 0.8494
+Epoch 7/20
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 750/750 [00:01<00:00, 451.84it/s]
+- Train metrics: accuracy: 0.8481 ; loss: 0.3923
+- Eval metrics: accuracy: 0.8494 ; loss: 0.3897
+- update_metrics metrics: accuracy: 0.8494 ; loss: 0.3897, average accuracy: 0.8494
+Epoch 8/20
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 750/750 [00:01<00:00, 456.68it/s]
+- Train metrics: accuracy: 0.8480 ; loss: 0.3923
+- Eval metrics: accuracy: 0.8492 ; loss: 0.3896
+- update_metrics metrics: accuracy: 0.8492 ; loss: 0.3896, average accuracy: 0.8492
+Epoch 9/20
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 750/750 [00:01<00:00, 454.86it/s]
+- Train metrics: accuracy: 0.8483 ; loss: 0.3922
+- Eval metrics: accuracy: 0.8492 ; loss: 0.3896
+- update_metrics metrics: accuracy: 0.8492 ; loss: 0.3896, average accuracy: 0.8492
+Epoch 10/20
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 750/750 [00:01<00:00, 453.42it/s]
+- Train metrics: accuracy: 0.8483 ; loss: 0.3922
+- Eval metrics: accuracy: 0.8492 ; loss: 0.3896
+- update_metrics metrics: accuracy: 0.8492 ; loss: 0.3896, average accuracy: 0.8492
+Epoch 11/20
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 750/750 [00:01<00:00, 453.25it/s]
+- Train metrics: accuracy: 0.8485 ; loss: 0.3921
+- Eval metrics: accuracy: 0.8492 ; loss: 0.3896
+- update_metrics metrics: accuracy: 0.8492 ; loss: 0.3896, average accuracy: 0.8492
+Epoch 12/20
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 750/750 [00:02<00:00, 331.35it/s]
+- Train metrics: accuracy: 0.8487 ; loss: 0.3921
+- Eval metrics: accuracy: 0.8491 ; loss: 0.3895
+- update_metrics metrics: accuracy: 0.8491 ; loss: 0.3895, average accuracy: 0.8491
+Epoch 13/20
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 750/750 [00:01<00:00, 456.08it/s]
+- Train metrics: accuracy: 0.8486 ; loss: 0.3920
+- Eval metrics: accuracy: 0.8492 ; loss: 0.3895
+- update_metrics metrics: accuracy: 0.8492 ; loss: 0.3895, average accuracy: 0.8492
+Epoch 14/20
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 750/750 [00:01<00:00, 454.59it/s]
+- Train metrics: accuracy: 0.8486 ; loss: 0.3919
+- Eval metrics: accuracy: 0.8491 ; loss: 0.3895
+- update_metrics metrics: accuracy: 0.8491 ; loss: 0.3895, average accuracy: 0.8491
+Early stopping at epoch 15/20
+train num_steps: 375.0
+numbers_of_selections: [14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+global_epoch: 14 epoch(s) at learner 0
+total time: 59.72860288619995 seconds ---
+(base) Xiaofengs-MacBook-Pro:src_fc_group xiaofengzhu$ python evaluate.py
+Using TensorFlow backend.
+Creating the dataset...
+- done.
+Creating the model...
+WARNING:tensorflow:From /Users/xiaofengzhu/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+From /Users/xiaofengzhu/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /Users/xiaofengzhu/Documents/continual_learning/src_fc_group/model/modeling.py:240: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /Users/xiaofengzhu/Documents/continual_learning/src_fc_group/model/modeling.py:240: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /Users/xiaofengzhu/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/ops/metrics_impl.py:363: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+From /Users/xiaofengzhu/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/ops/metrics_impl.py:363: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+- done.
+Starting evaluation
+2019-12-30 00:01:02.143530: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+WARNING:tensorflow:From /Users/xiaofengzhu/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+From /Users/xiaofengzhu/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+INFO:tensorflow:Restoring parameters from experiments/base_model/best_weights/after-epoch-3
+Restoring parameters from experiments/base_model/best_weights/after-epoch-3
+- Eval metrics: accuracy: 0.8529
+- update_metrics metrics: accuracy: 0.8529, average accuracy: 0.8529

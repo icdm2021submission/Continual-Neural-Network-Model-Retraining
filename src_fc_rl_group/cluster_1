@@ -1,0 +1,18 @@
+glob.glob(path_train_tfrecords): ['../data/sea/train-0.tfrecords', '../data/sea/train-1.tfrecords', '../data/sea/train-4.tfrecords', '../data/sea/train-2.tfrecords', '../data/sea/train-5.tfrecords', '../data/sea/train-3.tfrecords'] ~~~~~~
+---------
+Variables: name (type shape) [size]
+---------
+model/cnn/weights1_1:0 (float32_ref 3x16) [48, bytes: 192]
+model/cnn/biases1_1:0 (float32_ref 16) [16, bytes: 64]
+model/cnn/weights1_2:0 (float32_ref 16x4) [64, bytes: 256]
+model/cnn/biases1_2:0 (float32_ref 4) [4, bytes: 16]
+model/cnn/weights3_2:0 (float32_ref 4x2) [8, bytes: 32]
+model/cnn/biases3_2:0 (float32_ref 2) [2, bytes: 8]
+model/c_cnn/weights1_1:0 (float32_ref 3x16) [48, bytes: 192]
+model/c_cnn/biases1_1:0 (float32_ref 16) [16, bytes: 64]
+model/c_cnn/weights1_2:0 (float32_ref 16x4) [64, bytes: 256]
+model/c_cnn/biases1_2:0 (float32_ref 4) [4, bytes: 16]
+model/c_cnn/weights3_2:0 (float32_ref 4x2) [8, bytes: 32]
+model/c_cnn/biases3_2:0 (float32_ref 2) [2, bytes: 8]
+Total size of variables: 284
+Total bytes of variables: 1136
